@@ -5,13 +5,19 @@ that aims to enhance the experience of [Splamy's TS3AudioBot](https://github.com
 
 It is an alternative to the built-in WebInterface which is written with [reactjs](https://reactjs.org/) and [electronjs](https://www.electronjs.org/).
 
+#### Download
+
+##### Current Version: 0.8
+
+Windows: [TS3AudioBot-Client_Win.zip](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v0.8/TS3AudioBot-Client_Win.zip)
+
+MacOS: [TS3AudioBot-Client-0.8.0-mac.zip](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v0.8/TS3AudioBot-Client-0.8.0-mac.zip)
+
+
 ## Overview
 
  - [Features](#features)
- - [Setup](#setup)
-    - [Serverside](#1-serverside)
-    - [Clientside](#2-clientside)
-    - [Download](#download)
+ - [Serverside setup](#serverside-setup)
  - [Configuration](#configuration)
     - [Base Url](#base-url)
     - [Bot Config](#bot-config)
@@ -54,11 +60,9 @@ It is an alternative to the built-in WebInterface which is written with [reactjs
 
 [More pictures can be found on Usage](#usage)
 
-## Setup
+## Serverside setup
 
 [Back to Overview](#overview)
-
-### 1. Serverside
 
 Make sure that your webserver is running, your ts3audiobot.toml should include the following code:
 ```$xslt
@@ -70,18 +74,6 @@ port = 58913
 enabled = true
 ```
 More information on this can be found [here](https://github.com/Splamy/TS3AudioBot/wiki/WebAPI).
-
-### 2. Clientside
-
-Simply download the app for your system and start it.
-
-#### Download
-
-##### Current Version: 0.8
-
-Windows: [TS3AudioBot-Client_Win.zip](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v0.8/TS3AudioBot-Client_Win.zip)
-
-MacOS: [TS3AudioBot-Client-0.8.0-mac.zip](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v0.8/TS3AudioBot-Client-0.8.0-mac.zip)
 
 ## Configuration
 
