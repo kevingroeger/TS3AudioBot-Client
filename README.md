@@ -38,6 +38,8 @@ It is an alternative to the built-in WebInterface which is written with [reactjs
 
 [Back to Overview](#overview)
 
+(Different styles have been used on these pictures)
+
 ### Clear Overview
 ![image1](https://imgur.com/7JVO7yJ.png)
 ![image2](https://imgur.com/UAj6mLX.png)
@@ -131,6 +133,8 @@ Make sure to save your configuration.
 ## Usage
 
 [Back to Overview](#overview)
+
+(Different styles have been used on these pictures)
 
 Altough the usage is pretty straight forward, here is a quick overview:
 
