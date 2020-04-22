@@ -13,6 +13,19 @@ Windows: [TS3AudioBot-Client_Win.zip](https://github.com/kevingroeger/TS3AudioBo
 
 MacOS: [TS3AudioBot-Client-0.8.0-mac.zip](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v0.8/TS3AudioBot-Client-0.8.0-mac.zip)
 
+## Quick Start
+
+ - Download and execute the app and make sure the api of your TS3AudioBot Instance is running.
+
+ - Enter the server address / IP of your server into the Base Url input field.
+
+ - Save the configuration and click the small download button on the right of the Bot Config.
+
+(The following can be optional depending on your rights management)
+
+ - Message a TS3AudioBot instance `!api key` in a private chat.
+
+ - Paste the output into the API key input and save the configuration. 
 
 ## Overview
 
