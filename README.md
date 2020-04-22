@@ -138,11 +138,18 @@ If a song is currently playing, it will be shown here with some basic controls (
 
 Also you can enter a mp3 radiostream, a youtube link or another supported link here. For more information about what is supported visit [Splamy's TS3AudioBot](https://github.com/Splamy/TS3AudioBot).
 
+![image7](https://imgur.com/UAj6mLX.png)
+
 ### Playlist
 
 You can create, play and add playlists to the queue here. Only youtube playlists are supported. Names cannot include any whitespaces. The playlists will be saved for everyone using the app.
 
+![image8](https://imgur.com/CZ7dF9y.png)
+![image9](https://imgur.com/pccEwoz.png)
+
 ### Radio
+
+![image10](https://imgur.com/0Aay2b6.png)
 
 There is currently only a small choice of preconfigured radio streams here. If you want to add your own radio go to [Radio Config](#radio-configuration).
 
@@ -151,6 +158,8 @@ There is currently only a small choice of preconfigured radio streams here. If y
 The most played songs will be shown here in a compact list.
 
 ### History
+
+![image11](https://imgur.com/e5xdR7l.png)
 
 The last 12 songs are shown here.
 
