@@ -1,0 +1,553 @@
+.background {
+  font-family: Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-top: 3.67rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+.NavLink {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+  z-index: 6000;
+  color: #b1b1b1;
+  margin: 0 1rem;
+}
+
+.NavLink:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.NavLink svg:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.NavLinkCog svg:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.NavLinkCog {
+  position: absolute;
+  right: 0;
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+  z-index: 6000;
+  color: #b1b1b1;
+  margin: 0 1rem;
+}
+
+.NavLinkCog:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.NavLinkActive {
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.NavLinkActive:hover {
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.NavLinkSettings {
+  position: absolute;
+  right: .33rem;
+  text-align: right;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.NavLinkSettings:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.NavLinkActiveSettings {
+  color: #b1b1b1;
+  margin: 0 1rem;
+}
+
+.NavLinkActiveSettings:hover {
+  color: #b1b1b1;
+  margin: 0 1rem;
+}
+
+.nav-tabs a {
+  color: black;
+}
+
+.history {
+  margin: 1rem 0;
+}
+
+.historyEntries {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.historyEntries h5 {
+  margin-right: 1rem;
+}
+
+.NavBarSticky1 {
+  position: fixed;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  z-index: 3000;
+  width: 93.5vw;
+  overflow: visible;
+  height: 2.66rem;
+}
+
+.NavBarSticky2 {
+  position: fixed;
+  z-index: 3000;
+  width: 6.5vw;
+  right: 0;
+  height: 2.66rem;
+}
+
+
+.ytplayer {
+  text-align: center;
+}
+
+.dashBoard {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.dashBoard_Card {
+  text-align: center;
+  margin: 0 1.5rem 1rem 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.dashBoard_Card_Title {
+  margin: .6rem 2rem .5rem 2rem;
+}
+
+.dashBoard_youtube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashBoard_youtube > div {
+  margin: 0 .25rem;
+  width: 24rem;
+}
+
+.card_controls_current {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card_controls_current_playpause {
+  width: 30%;
+  background: #343a40;
+  border: 3px solid white;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.card_controls_current_playpause:hover {
+  background: #42494f;
+  color: #afafaf;
+}
+
+.card_controls_current_next {
+  width: 30%;
+  background: #343a40;
+  border: 3px solid white;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.card_controls_current_next:hover {
+  background: #42494f;
+  color: #afafaf;
+}
+
+.card_controls svg{
+  cursor: pointer;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.card_controls_toplist svg{
+  cursor: pointer;
+  margin: 0 1rem .5rem 1rem;
+}
+
+.card_controls_radio {
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: -.65rem;
+  left: .35rem;
+  color: white;
+  font-size: 3rem;
+  background: rgba(20,20,20,.45);
+  border-radius: 100rem;
+  min-width: 200px;
+  height: 200px;
+  padding-top: 0;
+}
+
+.radioText {
+  margin-top: .75rem;
+}
+
+.card_controls_radio svg {
+  margin-top: 4rem;
+}
+
+.reloadIcon {
+  color: black;
+  margin-top: .5625rem;
+}
+
+.reloadIcon:hover {
+  color: black;
+}
+
+.reloadIconDiv {
+  position: absolute;
+  right: 2rem;
+  top: 3.5rem;
+  background: #fff;
+  border-radius: 2rem;
+  height: 2.25rem;
+  min-width: 2.25rem;
+  text-align: center;
+  vertical-align: center;
+  box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.75);
+}
+
+.reloadIconDiv:hover {
+  background: #ededed;
+  cursor: pointer;
+}
+
+.playlistInfo {
+  text-align: center;
+  margin: 1rem 1rem 0 1rem;
+  display: block;
+}
+
+.playlistInfo h4 {
+  text-align: center;
+  margin: 0 0 1.5rem 4rem;
+  display: inline-block;
+}
+
+.createNewPlaylistButton {
+  display: block;
+}
+
+.playlist_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.singlePlaylist {
+  color: #000;
+  min-width: 20%;
+  text-align: center;
+  padding: 1rem 0;
+  margin: .5rem;
+  border: 1px solid black;
+  background: linear-gradient(112deg, rgba(255,255,255,.3) 20%, rgba(255,255,255,.65) 100%);
+}
+
+.modal {
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-main {
+  top: 20%;
+  left: 20%;
+  margin: 0 2rem;
+  padding: 0 2rem;
+  min-height: 12rem;
+  min-width: 30rem;
+  position: fixed;
+  background-color: #e5e5e5;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+  0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.topright {
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 1rem;
+  font-weight: bolder;
+  color: red;
+  top: .7rem;
+}
+
+.modalContents {
+  text-align: left;
+}
+
+.modalContents>input {
+  margin-top: 0;
+  width: 100%;
+}
+
+.modalContents>label {
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
+.modalContents>button {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.subtitlePlayCount {
+  margin-bottom: .7rem;
+}
+
+.queueItem {
+  color: rgba(250,250,250, .86);
+  font-size: .8rem;
+  line-height: .9rem;
+  margin-bottom: .3rem;
+}
+
+.topList {
+  margin: 1rem 0 0 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.toplistLight {
+  padding-top: .5rem;
+  background: linear-gradient(90deg, rgba(255,255,255,.15) 0%, rgba(255,255,255,.27) 60%, rgba(255,255,255,.15) 100%);
+  color: #000;
+  border-top: 1px solid black;
+}
+
+.toplistDark {
+  padding-top: .5rem;
+  background: linear-gradient(90deg, rgba(255,255,255,.15) 0%, rgba(255,255,255,.32) 40%, rgba(255,255,255,.16) 100%);
+  color: #000;
+  border-top: 1px solid black;
+}
+
+.topListEntryTitle {
+  margin: 0;
+}
+
+.topListEntryPlayCount {
+  margin-bottom: 1rem;
+}
+
+svg:hover {
+  color: #afafaf;
+}
+
+.TabControl {
+  font-size: 1.15rem;
+  margin-left: 1rem;
+}
+
+.radioMenu {
+  text-align: center;
+  margin: 1rem;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radioMenu div{
+  margin: 1rem 0;
+  padding: .35rem;
+}
+
+.radioCard {
+  border: 1px solid black;
+}
+
+.versionheader {
+  position: fixed;
+  z-index: 2000;
+  font-size: .6rem;
+  left: .67rem;
+  bottom: -.5rem;
+}
+
+.controlWindow {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.minimizeWindow {
+  border-radius: unset;
+  z-index: 5000;
+}
+
+.closeWindow {
+  border-radius: unset;
+  z-index: 5000;
+}
+
+.minimizeWindow svg:hover {
+  color: unset;
+}
+
+.closeWindow svg:hover {
+  color: unset;
+}
+
+.btn svg:hover {
+  color: unset;
+}
+
+.radioTitle {
+  font-size: 2.25rem;
+}
+
+.playNow {
+  text-align: center;
+  color: white;
+  background: #343a40;
+  border: solid 1px black;
+  border-radius: .3rem;
+  padding-bottom: 2rem;
+  margin: 0 17% 1rem 17%;
+}
+.playNow h4 {
+  margin: 1.33rem 0 1rem 0;
+}
+
+.playNowMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.playNowMenu input {
+  width: 66%;
+  margin: 0 1rem;
+}
+
+.playNowMenu button:disabled {
+  cursor: default;
+}
+
+.playNowMenu button {
+  margin: 0 .5rem;
+}
+
+.styles {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.styles h5 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.styles button {
+  margin: 0 1rem;
+  border: 2px solid black;
+}
+
+.baseUrl input {
+  width: 40%;
+}
+
+.baseUrl h5 {
+  margin-top: 1rem;
+}
+
+.bots input {
+  width: 40%;
+}
+
+.bots h5 {
+  margin-top: 1.5rem;
+}
+
+.settingsHl {
+  text-align: center;
+}
+
+.settingsHl>.alert {
+  margin: 0 20%;
+}
+
+.buttonBorder {
+  margin-top: 1rem;
+  border: 1px solid white;
+}
+
+.buttonBorder:hover {
+  border: 1px solid white;
+}
+
+.toastcontainer {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  color: #6e6e6e;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  z-index: 10000;
+}
+
+.transparency {
+  background: rgba(52,58,64, 0.88) !important;
+}
+
+.spacing {
+  padding-right: .7rem;
+}
+
+.somemarginleft {
+  position: absolute;
+  margin-left: .5rem;
+  margin-top: .5rem;
+}
+
+.youtubeCards {
+  margin-bottom: 0.5rem;
+  max-width: 18rem;
+}
+
+.trashCan {
+  color: red;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
