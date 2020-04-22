@@ -37,15 +37,15 @@ It is an alternative to the built-in WebInterface which is written with [reactjs
 ## Features
 
 Clear Overview
-![image1](https://imgur.com/7JVO7yJ)
-![image2](https://imgur.com/UAj6mLX)
+![image1](https://imgur.com/7JVO7yJ.png)
+![image2](https://imgur.com/UAj6mLX.png)
 
 See your history
-![image3](https://imgur.com/e5xdR7l)
+![image3](https://imgur.com/e5xdR7l.png)
 
 Configurable and different styles
-![image4](https://imgur.com/htj2zw0)
-![image5](https://imgur.com/5qZUBGY)
+![image4](https://imgur.com/htj2zw0.png)
+![image5](https://imgur.com/5qZUBGY.png)
 
 ## Setup
 
