@@ -7,6 +7,7 @@ It is an alternative to the built-in WebInterface which is written with [reactjs
 
 ## Overview
 
+ - [Features](#features)
  - [Setup](#setup)
     - [Serverside](#1-serverside)
     - [Clientside](#2-clientside)
@@ -33,6 +34,19 @@ It is an alternative to the built-in WebInterface which is written with [reactjs
     - [Note on Linux](#note-on-linux)
  - [License](#license)
 
+## Features
+
+Clear Overview
+![image1](https://imgur.com/7JVO7yJ)
+![image2](https://imgur.com/UAj6mLX)
+
+See your history
+![image3](https://imgur.com/e5xdR7l)
+
+Configurable and different styles
+![image4](https://imgur.com/htj2zw0)
+![image5](https://imgur.com/5qZUBGY)
+
 ## Setup
 
 ### 1. Serverside
@@ -56,9 +70,9 @@ Simply download the app for your system and start it.
 
 ##### Current Version: 0.8
 
-Windows: (#LINK1)
+Windows: [TS3AudioBot-Client_Win.zip](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v0.8/TS3AudioBot-Client_Win.zip)
 
-MacOS: (#LINK1)
+MacOS: [TS3AudioBot-Client-0.8.0-mac.zip](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v0.8/TS3AudioBot-Client-0.8.0-mac.zip)
 
 ## Configuration
 
