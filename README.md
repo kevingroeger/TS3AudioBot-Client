@@ -83,7 +83,7 @@ On first start, you need to configure your app.
 ### Base Url
 
 Enter the full Url to your server here. It should have the following format:
-`http(s)://<server>:<port>`
+`http(s)://<server>:<port>` without closing slash.
 
 Eg. it could be one of the following:
 ```
