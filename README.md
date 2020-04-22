@@ -50,6 +50,8 @@ It is an alternative to the built-in WebInterface which is written with [reactjs
 ![image5](https://imgur.com/5qZUBGY.png)
 ![image6](https://imgur.com/ib3Xep2.png)
 
+[More pictures can be found on Usage](#usage)
+
 ## Setup
 
 [Back to Overview](#overview)
