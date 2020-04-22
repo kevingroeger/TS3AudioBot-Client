@@ -195,7 +195,7 @@ The app is easily customizable. If you want to provide a version to your friends
 Altough it can be done without, some javascript knowledge is helpful when trying to create a custom version.
 Changing the standard configuration is quite easy. Make sure you have [yarn](https://yarnpkg.com/) installed on your system. 
 
-Just clone the git repository delete and use `yarn` to install the required node modules.
+Just clone the git repository and use `yarn` to install the required node modules.
 
 ### Standard Configuration
 
