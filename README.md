@@ -148,7 +148,7 @@ You can create, play and add playlists to the queue here. Only youtube playlists
 
 ![image10](https://imgur.com/0Aay2b6.png)
 
-There is currently only a small choice of preconfigured radio streams here. If you want to add your own radio go to [Radio Config](#radio-configuration).
+There is currently only a small choice of preconfigured radio streams here. If you want to add your own radio go to [Customizing the app](#customizing-the-app).
 
 ### Toplist
 
@@ -200,7 +200,7 @@ var Configs = {
       id: 0
     },{
       name: 'RealCoolBot2',
-      id: 0
+      id: 1
     }
   ],
   apiKey: ''
