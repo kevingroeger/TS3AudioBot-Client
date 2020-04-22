@@ -55,7 +55,6 @@ MacOS: [TS3AudioBot-Client-0.8.0-mac.zip](https://github.com/kevingroeger/TS3Aud
 
 ### Configurable with different styles
 ![image4](https://imgur.com/htj2zw0.png)
-![image5](https://imgur.com/5qZUBGY.png)
 ![image6](https://imgur.com/ib3Xep2.png)
 
 [More pictures can be found on Usage](#usage)
