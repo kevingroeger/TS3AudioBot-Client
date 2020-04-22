@@ -1,12 +1,12 @@
 {
-  "name": "alphabot",
+  "name": "ts3audiobot-client",
   "version": "0.8.0",
   "private": true,
   "homepage": "./",
   "main": "public/electron.js",
   "build": {
     "appId": "com.electron.kevingroeger",
-    "productName": "AlphaBot",
+    "productName": "TS3AudioBot-Client",
     "copyright": "Copyright © 2020 kevingroeger",
     "mac": {
       "category": "public.app-category.utilities"
