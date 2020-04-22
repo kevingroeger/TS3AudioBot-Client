@@ -36,6 +36,8 @@ It is an alternative to the built-in WebInterface which is written with [reactjs
 
 ## Features
 
+[Back to Overview](#overview)
+
 ### Clear Overview
 ![image1](https://imgur.com/7JVO7yJ.png)
 ![image2](https://imgur.com/UAj6mLX.png)
@@ -49,6 +51,8 @@ It is an alternative to the built-in WebInterface which is written with [reactjs
 ![image6](https://imgur.com/ib3Xep2.png)
 
 ## Setup
+
+[Back to Overview](#overview)
 
 ### 1. Serverside
 
@@ -76,6 +80,8 @@ Windows: [TS3AudioBot-Client_Win.zip](https://github.com/kevingroeger/TS3AudioBo
 MacOS: [TS3AudioBot-Client-0.8.0-mac.zip](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v0.8/TS3AudioBot-Client-0.8.0-mac.zip)
 
 ## Configuration
+
+[Back to Overview](#overview)
 
 On first start, you need to configure your app.
 
@@ -122,6 +128,8 @@ Make sure to save your configuration.
 
 ## Usage
 
+[Back to Overview](#overview)
+
 Altough the usage is pretty straight forward, here is a quick overview:
 
 ### Dashboard
@@ -158,6 +166,8 @@ If you find a bug that is not listed here, please submit it as an Issue.
  - The app sometimes shows a song that isn't playing anymore for a short time.
 
 ## Customizing the app
+
+[Back to Overview](#overview)
 
 The app is easily customizable. If you want to provide a version to your friends without them needing to change the configuration by themselves, you can absolutely do so.
 
@@ -283,6 +293,8 @@ Removing or updating the installed version on windows requires changes to the re
 I have not tested the app on linux and will not provide any support for linux-specific problems.
 
 ## License
+
+[Back to Overview](#overview)
 
 MIT License, [tl;dr](https://tldrlegal.com/license/mit-license)
 
