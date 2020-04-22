@@ -36,16 +36,17 @@ It is an alternative to the built-in WebInterface which is written with [reactjs
 
 ## Features
 
-Clear Overview
+### Clear Overview
 ![image1](https://imgur.com/7JVO7yJ.png)
 ![image2](https://imgur.com/UAj6mLX.png)
 
-See your history
+### See your history
 ![image3](https://imgur.com/e5xdR7l.png)
 
-Configurable and different styles
+### Configurable with different styles
 ![image4](https://imgur.com/htj2zw0.png)
 ![image5](https://imgur.com/5qZUBGY.png)
+![image6](https://imgur.com/ib3Xep2.png)
 
 ## Setup
 
