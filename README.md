@@ -1,9 +1,7 @@
 # TS3AudioBot-Client
 
 TS3AudioBot-Client is a lightweight clientside application for Windows and MacOS
-that aims to enhance the experience of [Splamy's TS3AudioBot](https://github.com/Splamy/TS3AudioBot).
-
-It is an alternative to the built-in WebInterface.
+that aims to enhance the experience of [Splamy's TS3AudioBot](https://github.com/Splamy/TS3AudioBot). It is an alternative to the built-in WebInterface.
  
 The app is written with [reactjs](https://reactjs.org/) and [electronjs](https://www.electronjs.org/).
 
