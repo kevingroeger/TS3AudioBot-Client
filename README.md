@@ -60,15 +60,24 @@ MacOS: [TS3AudioBot-Client-0.8.0-mac.zip](https://github.com/kevingroeger/TS3Aud
 (Different styles have been used on these pictures)
 
 ### Clear Overview
-![image1](https://imgur.com/7JVO7yJ.png)
-![image2](https://imgur.com/UAj6mLX.png)
+
+<p align="center">
+ <a href="https://imgur.com/7JVO7yJ.png" ><img width="42%" src="https://imgur.com/7JVO7yJ.png" /></a>
+ <a href="https://imgur.com/UAj6mLX.png" ><img width="42%" src="https://imgur.com/UAj6mLX.png" /></a>
+</p>
 
 ### See your history
-![image3](https://imgur.com/e5xdR7l.png)
+
+<p align="center">
+ <a href="https://imgur.com/e5xdR7l.png"><img width="54%" src="https://imgur.com/e5xdR7l.png" /></a>
+</p>
 
 ### Configurable with different styles
-![image4](https://imgur.com/htj2zw0.png)
-![image6](https://imgur.com/ib3Xep2.png)
+
+<p align="center">
+ <a href="https://imgur.com/htj2zw0.png"><img width="42%" src="https://imgur.com/htj2zw0.png" /></a>
+ <a href="https://imgur.com/ib3Xep2.png"><img width="42%" src="https://imgur.com/ib3Xep2.png" /></a>
+</p>
 
 [More pictures can be found on Usage](#usage)
 
@@ -148,18 +157,23 @@ If a song is currently playing, it will be shown here with some basic controls (
 
 Also you can enter a mp3 radiostream, a youtube link or another supported link here. For more information about what is supported visit [Splamy's TS3AudioBot](https://github.com/Splamy/TS3AudioBot).
 
-![image7](https://imgur.com/UAj6mLX.png)
+<p align="center">
+ <a href="https://imgur.com/UAj6mLX.png"><img width="54%" src="https://imgur.com/UAj6mLX.png" /></a>
+</p>
 
 ### Playlist
 
 You can create, play and add playlists to the queue here. Only youtube playlists are supported. Names cannot include any whitespaces. The playlists will be saved for everyone using the app.
 
-![image8](https://imgur.com/CZ7dF9y.png)
-![image9](https://imgur.com/pccEwoz.png)
+<p align="center">
+ <a href="https://imgur.com/CZ7dF9y.png"><img width="42%" src="https://imgur.com/CZ7dF9y.png" /></a>
+ <a href="https://imgur.com/pccEwoz.png"><img width="42%" src="https://imgur.com/pccEwoz.png" /></a>
+</p>
 
 ### Radio
-
-![image10](https://imgur.com/0Aay2b6.png)
+<p align="center">
+ <a href="https://imgur.com/0Aay2b6.png"><img width="54%" src="https://imgur.com/0Aay2b6.png" /></a>
+</p>
 
 There is currently only a small choice of preconfigured radio streams here. If you want to add your own radio go to [Customizing the app](#customizing-the-app).
 
@@ -169,13 +183,15 @@ The most played songs will be shown here in a compact list.
 
 ### History
 
-![image11](https://imgur.com/e5xdR7l.png)
+<p align="center">
+ <a href="https://imgur.com/e5xdR7l.png"><img width="54%" src="https://imgur.com/e5xdR7l.png" /></a>
+</p>
 
 The last 12 songs are shown here.
 
 ## Known issues and bugs
 
-This is a early development build, so there are some things that I couldn't yet implement.
+This is an early build, so there are some things that I couldn't yet implement.
 
 If you find a bug that is not listed here, please submit it as an Issue.
 
