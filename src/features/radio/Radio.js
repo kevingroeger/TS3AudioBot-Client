@@ -3,7 +3,7 @@ import { Card, Image } from 'react-bootstrap'
 import Controls from '../../components/Controls/Controls'
 import { radioArray } from '../../utils/radio'
 
-export default function Radio ({ botId, handleToast }) {
+export default function Radio ({ botId }) {
   return (
     <>
       <div className='radioMenu'>
