@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faPause, faForward } from '@fortawesome/free-solid-svg-icons'
 import { fetchApi } from '../../utils/dataAccess'

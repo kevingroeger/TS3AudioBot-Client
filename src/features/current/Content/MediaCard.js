@@ -39,7 +39,7 @@ export default function YoutubeCard ({ botId }) {
       </Card.Title>
       <p className='radioTitle'>
         {radioStation !== 'not identified'
-          ? radioStation
+          ? 'Radio ' + radioStation
           : 'Media'
         }
       </p>

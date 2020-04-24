@@ -28,7 +28,7 @@ export default function QueuedItems () {
                 className='queueItem'
                 key={i}
               >
-                {item.Title}
+                {item?.Title}
               </p>
             )
           })}

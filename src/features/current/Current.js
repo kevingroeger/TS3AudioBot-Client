@@ -3,7 +3,6 @@ import { Card } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 
 import {
-  selectInfo,
   getInfoData
 } from './infoSlice'
 
@@ -17,7 +16,6 @@ import { faSyncAlt } from '@fortawesome/free-solid-svg-icons'
 import YoutubeCard from './Content/YoutubeCard'
 import NoContentCard from './Content/NoContentCard'
 import MediaCard from './Content/MediaCard'
-import { BarLoader } from 'react-spinners'
 
 export default function Current ({ botId }) {
   const song = useSelector(selectSong)
@@ -26,6 +24,10 @@ export default function Current ({ botId }) {
   useEffect(() => {
     loadData()
   }, [])
+
+  useEffect(() => {
+    loadData()
+  }, [botId])
 
   const loadData = () => {
     dispatch(getInfoData(botId))
@@ -50,8 +52,8 @@ export default function Current ({ botId }) {
       >
         {song?.status === 'ready'
           ? (song.AudioType === 'youtube'
-              ? <YoutubeCard botId={botId}/>
-              : <MediaCard botId={botId}/>)
+            ? <YoutubeCard botId={botId}/>
+            : <MediaCard botId={botId}/>)
           : <NoContentCard />
         }
       </Card>

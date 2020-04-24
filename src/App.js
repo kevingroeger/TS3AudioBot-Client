@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { HashRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
 import { Button, Navbar } from 'react-bootstrap'
-import BotMenu from './components/BotMenu'
+import BotMenu from './features/botmenu/BotMenu'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCog, faRobot, faWindowClose, faWindowMinimize } from '@fortawesome/free-solid-svg-icons'
 import Settings from './components/Settings'
@@ -101,7 +101,7 @@ export default function App () {
                 background={background}
               />
             </Route>
-            <Route exact path='/bot/:id'>
+            <Route exact path='/bot/:botId'>
               <BotMenu />
             </Route>
           </div>
