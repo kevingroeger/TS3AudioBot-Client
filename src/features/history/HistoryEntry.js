@@ -1,12 +1,11 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import ReactPlayer from 'react-player'
-import Controls from '../Controls/Controls'
+import Controls from '../../components/Controls/Controls'
 
 export default function HistoryEntry ({
   item,
   botId,
-  handleToast,
 }) {
   return (
     <Card
@@ -31,7 +30,6 @@ export default function HistoryEntry ({
             />}
         </div>
         <Controls
-          handleToast={handleToast}
           index={item.Id}
           botId={botId}
           url={`https://youtube.com/watch?v=${item.AudioResource.resid}`}

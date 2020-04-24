@@ -5,6 +5,7 @@ import DashBoard from '../dashBoard/DashBoard'
 import LoadingBar from './LoadingBar'
 import Playlists from '../playlist/Playlist'
 import Radio from '../radio/Radio'
+import History from '../history/History'
 
 function BotMenu () {
   let { botId } = useParams()
@@ -40,11 +41,13 @@ function BotMenu () {
           eventKey='topList'
           title='Toplist'
         >
+
         </Tab>
         <Tab
           eventKey='history'
           title='History'
         >
+          <History botId={botId} />
         </Tab>
       </Tabs>
     </>
