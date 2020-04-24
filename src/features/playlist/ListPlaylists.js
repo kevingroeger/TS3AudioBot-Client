@@ -8,7 +8,6 @@ export default function Listplaylists ({ botId }) {
   const playlists = useSelector(selectPlaylists)
   return (
     <div className='playlist_list'>
-      {console.log(playlists)}
       {Array.isArray(playlists.playlists) && playlists.playlists.length > 0 ? playlists.playlists.map((item, i) => {
         return (
           <Card

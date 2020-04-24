@@ -6,6 +6,7 @@ import LoadingBar from './LoadingBar'
 import Playlists from '../playlist/Playlist'
 import Radio from '../radio/Radio'
 import History from '../history/History'
+import Toplist from '../toplist/Toplist'
 
 function BotMenu () {
   let { botId } = useParams()
@@ -41,7 +42,7 @@ function BotMenu () {
           eventKey='topList'
           title='Toplist'
         >
-
+          <Toplist botId={botId} />
         </Tab>
         <Tab
           eventKey='history'
