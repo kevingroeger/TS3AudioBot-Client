@@ -22,15 +22,6 @@ export const fetchApi = async (url) => {
 
 const getResponse = (response) => {
   try {
-    if (response.status === 204) {
-      return 'ok'
-    }
-    if (response.status === 422) {
-      return 'none'
-    }
-    if (response.status === 404) {
-      return 'not found'
-    }
     if (response.headers.get('Content-Type') === 'application/json') {
       return response.json()
     } else {

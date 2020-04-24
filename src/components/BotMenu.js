@@ -6,7 +6,7 @@ import Playlists from './Playlist/Playlists'
 import TopList from './History/TopList'
 import Radio from './Radio'
 import History from './History/History'
-import DashBoard from './Dash/DashBoard'
+import DashBoard from '../features/dashBoard/DashBoard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 
