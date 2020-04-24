@@ -23,7 +23,6 @@ export default function History ({ botId }) {
     <>
       <div className='history'>
         <div className='historyEntries'>
-          {console.log(historyData)}
           {historyData.status === 'ready' && historyData.history.map((item, i) => {
             return (
               <HistoryEntry
