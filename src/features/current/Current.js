@@ -26,6 +26,11 @@ export default function Current ({ botId }) {
   }, [])
 
   useEffect(() => {
+    if (song.status === 'control') {
+      loadData()
+    }}, [song.status])
+
+  useEffect(() => {
     loadData()
   }, [botId])
 
@@ -50,10 +55,10 @@ export default function Current ({ botId }) {
         bg='dark'
         text='light'
       >
-        {song?.status === 'ready'
+        {(song.status === 'ready' || song.status === 'control')
           ? (song.AudioType === 'youtube'
-            ? <YoutubeCard botId={botId}/>
-            : <MediaCard botId={botId}/>)
+            ? <YoutubeCard botId={botId} />
+            : <MediaCard botId={botId} />)
           : <NoContentCard />
         }
       </Card>

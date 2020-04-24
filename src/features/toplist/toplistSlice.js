@@ -5,8 +5,8 @@ const fetchTopListData = createAsyncThunk(
   `/toplist`,
   async (botId) => {
     const response = await fetchApi(`/api/bot/use/${botId}/(/history/last/1000`)
-    const filteredResponse = await response.filter(element => element.PlayCount >= 5)
-    const sortedResponse = await sortEntriesByPlayCount(filteredResponse)
+    const filteredResponse = response.filter(element => element.PlayCount >= 5)
+    const sortedResponse = sortEntriesByPlayCount(filteredResponse)
     return await sortedResponse
   }
 )

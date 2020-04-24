@@ -22,6 +22,9 @@ export const fetchApi = async (url) => {
 
 const getResponse = (response) => {
   try {
+    if (response.status === 204) {
+      return response.status
+    }
     if (response.headers.get('Content-Type') === 'application/json') {
       return response.json()
     } else {

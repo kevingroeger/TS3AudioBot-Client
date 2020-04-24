@@ -1,21 +1,19 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faPause, faForward } from '@fortawesome/free-solid-svg-icons'
-import { fetchApi } from '../../utils/dataAccess'
-import { useSelector } from 'react-redux'
-import { selectSong } from './songSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { nextSongAction, playOrPauseAction, selectSong } from './songSlice'
 
 export default function CurrentControls ({ botId }) {
   const song = useSelector(selectSong)
+  const dispatch = useDispatch()
 
   const pause = () => {
-    fetchApi(`/api/bot/use/${botId}/(/pause`)
-      .catch(e => console.error(e))
+    dispatch(playOrPauseAction(botId))
   }
 
   const next = () => {
-    fetchApi(`/api/bot/use/${botId}/(/next`)
-      .catch(e => console.error(e))
+    dispatch(nextSongAction(botId))
   }
 
   return (
