@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { fetchApi } from '../../utils/dataAccess'
 
 const fetchSongData = createAsyncThunk(
-  `/song`,
+  `/song/data`,
   async (botId) => {
     return await fetchApi(`/api/bot/use/${botId}/(/song`)
   }
