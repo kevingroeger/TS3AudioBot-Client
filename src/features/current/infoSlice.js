@@ -38,9 +38,8 @@ export const infoSlice = createSlice({
 export const getInfoData = botId => async dispatch => {
   try {
     await dispatch(fetchInfoData(botId))
-    console.log('success fetching infoData')
   } catch (e) {
-
+    console.error(e)
   }
 }
 

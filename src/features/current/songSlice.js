@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice, unwrapResult } from '@reduxjs/toolkit'
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { fetchApi } from '../../utils/dataAccess'
 
 const fetchSongData = createAsyncThunk(
@@ -45,9 +45,8 @@ export const songSlice = createSlice({
 export const getSongData = botId => async dispatch => {
   try {
     await dispatch(fetchSongData(botId))
-    console.log('success fetching songData')
   } catch (e) {
-
+    console.error(e)
   }
 }
 
