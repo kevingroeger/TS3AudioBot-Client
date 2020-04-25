@@ -10,7 +10,6 @@ import Settings from './components/Settings'
 const { app } = window.require('electron').remote
 const remote = window.require('electron').remote
 const config = window.require('electron-json-config')
-//config.purge()
 const botArray = config.get('bots', window.Configs.botArray)
 const savedBackground = config.get('background', window.Configs.savedBackground)
 
