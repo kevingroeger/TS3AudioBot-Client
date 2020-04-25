@@ -9,6 +9,7 @@ import History from '../history/History'
 import Toplist from '../toplist/Toplist'
 import { useDispatch } from 'react-redux'
 import { getSongData } from '../current/songSlice'
+import { getLastTwelveHistoryEntries } from '../history/historySlice'
 
 function BotMenu () {
   let { botId } = useParams()
@@ -16,8 +17,12 @@ function BotMenu () {
   const [activeTab, setActiveTab] = useState('dashBoard')
 
   const handleTab = (tab) => {
+    // TODO: rewrite to extensive switch
     if (tab === 'dashBoard') {
       dispatch(getSongData(botId))
+    }
+    if (tab === 'history') {
+      dispatch(getLastTwelveHistoryEntries(botId))
     }
     setActiveTab(tab)
   }
