@@ -4,8 +4,7 @@ import PlayNow from '../../components/Dash/PlayNow'
 
 export default function DashBoard ({
   botId,
-  handleStatus,
-  handleToast
+  handleStatus
 }) {
   return (
     <>
@@ -17,7 +16,6 @@ export default function DashBoard ({
       <PlayNow
         botId={botId}
         handleStatus={handleStatus}
-        handleToast={handleToast}
       />
     </>
   )

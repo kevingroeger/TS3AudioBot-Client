@@ -7,18 +7,29 @@ import Playlists from '../playlist/Playlist'
 import Radio from '../radio/Radio'
 import History from '../history/History'
 import Toplist from '../toplist/Toplist'
+import { useDispatch } from 'react-redux'
+import { getSongData } from '../current/songSlice'
 
 function BotMenu () {
   let { botId } = useParams()
+  const dispatch = useDispatch()
   const [activeTab, setActiveTab] = useState('dashBoard')
+
+  const handleTab = (tab) => {
+    if (tab === 'dashBoard') {
+      dispatch(getSongData(botId))
+    }
+    setActiveTab(tab)
+  }
 
   return (
     <>
       <LoadingBar />
       <Tabs
         activeKey={activeTab}
-        onSelect={(tab) => {setActiveTab(tab)}}
+        onSelect={(tab) => handleTab(tab)}
         mountOnEnter
+        id='tabs_botmenu'
       >
         <Tab
           eventKey='dashBoard'

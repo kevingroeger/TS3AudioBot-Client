@@ -10,8 +10,7 @@ export default function Controls ({
   listId,
   index,
   isTopList,
-  radioUrl,
-  handleToast
+  radioUrl
 }) {
   const [isSong, setIsSong] = useState(true)
   const [isRadio, setIsRadio] = useState(false)
@@ -29,7 +28,6 @@ export default function Controls ({
   const addSongToPlayList = () => {
     setLoading(true)
     songAddToQueue()
-      .then((res) => handleToast(res, 'add'))
       .catch(e => console.error(e))
     setLoading(false)
   }
@@ -41,7 +39,6 @@ export default function Controls ({
   const playSongNow = () => {
     setLoading(true)
     songPlayNow()
-      .then((res) => handleToast(res, 'play'))
       .catch(e => console.error(e))
     setLoading(false)
   }
@@ -52,7 +49,6 @@ export default function Controls ({
   const playRadioNow = () => {
     setLoading(true)
     radioPlayNow()
-      .then((res) => handleToast(res, 'play'))
       .catch(e => console.error(e))
     setLoading(false)
   }
@@ -64,7 +60,6 @@ export default function Controls ({
   const addPlayListToPlaylist = () => {
     setLoading(true)
     listAddToQueue()
-      .then((res) => handleToast(res, 'add'))
       .catch(e => console.error(e))
     setLoading(false)
   }
@@ -76,7 +71,6 @@ export default function Controls ({
   const playPlaylistNow = () => {
     setLoading(true)
     listPlayNow()
-      .then((res) => handleToast(res, 'play'))
       .catch(e => console.error(e))
     setLoading(false)
   }
