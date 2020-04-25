@@ -8,6 +8,13 @@ const fetchSongData = createAsyncThunk(
   }
 )
 
+const getSongInfo = createAsyncThunk(
+  `/song/pause/info`,
+  async (botId) => {
+    return await fetchApi(`/api/bot/use/${botId}/(/song`)
+  }
+)
+
 const playOrPause = createAsyncThunk(
   `/song/pause`,
   async (botId) => {
@@ -73,6 +80,21 @@ export const songSlice = createSlice({
     },
     [nextSong.rejected] : state => {
       state.status = 'error'
+    },
+    [getSongInfo.pending] : state => {
+      state.status = 'control'
+    },
+    [getSongInfo.fulfilled] : (state, action) => {
+      if (!action.payload.Title) {
+        state.status = 'no data'
+        return
+      }
+      state.Timer = action.payload.Length - action.payload.Position
+      state.Paused = action.payload.Paused
+      state.status = 'ready'
+    },
+    [getSongInfo.rejected] : state => {
+      state.status = 'error'
     }
   }
 })
@@ -88,6 +110,7 @@ export const getSongData = botId => async dispatch => {
 export const playOrPauseAction = botId => async dispatch => {
   try {
     await dispatch(playOrPause(botId))
+    await dispatch(getSongInfo(botId))
   } catch (e) {
     console.error(e)
   }

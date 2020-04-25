@@ -26,11 +26,6 @@ export default function Current ({ botId }) {
   }, [])
 
   useEffect(() => {
-    if (song.status === 'control') {
-      loadData()
-    }}, [song.status])
-
-  useEffect(() => {
     loadData()
   }, [botId])
 
