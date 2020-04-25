@@ -2,29 +2,21 @@ import React, { useState } from 'react'
 import { Button } from 'react-bootstrap'
 import { fetchApi } from '../../utils/dataAccess'
 
-export default function PlayNow ({
-  botId,
-  handleReload,
-  handleToast
-}) {
+export default function PlayNow ({ botId }) {
   const [playNowLink, setPlayNowLink] = useState('')
   const playNowAction = () => {
     playNow().catch(e => console.error(e))
   }
 
   const playNow = () => {
-    const response = fetchApi(`/api/bot/use/${botId}/(/play/${encodeURIComponent(playNowLink)}`)
-    handleReload()
-    return response
+    return fetchApi(`/api/bot/use/${botId}/(/play/${encodeURIComponent(playNowLink)}`)
   }
   const addToQueueAction = () => {
     addToQueue().catch(e => console.error(e))
   }
 
   const addToQueue = () => {
-    const response = fetchApi(`/api/bot/use/${botId}/(/add/${encodeURIComponent(playNowLink)}`)
-    handleReload()
-    return response
+    return fetchApi(`/api/bot/use/${botId}/(/add/${encodeURIComponent(playNowLink)}`)
   }
 
   const handleChangeLink = (event) => {
@@ -44,7 +36,6 @@ export default function PlayNow ({
           disabled={playNowLink === ''}
           variant='outline-light'
           onClick={() => {
-            handleToast('ok', 'play')
             playNowAction()
           }}
         >
@@ -54,7 +45,6 @@ export default function PlayNow ({
           disabled={playNowLink === ''}
           variant='outline-light'
           onClick={() => {
-            handleToast('ok', 'add')
             addToQueueAction()
           }}
         >
