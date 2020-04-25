@@ -117,7 +117,7 @@ After you've done that you can just press the download button on the right and y
 
 If this does not work, you either entered the wrong Base Url, can't establish a connection to the server or you don't have any bots running.
 
-This option can be customized. If you want to rename your bots you can just do it. Just make sure to not break the format or change the ids.
+This option can be customized. If you want to rename your bots you can just do it. Just make sure to not break the format or change the ids. Keep in mind that this will only change the name that is viewed to your client, not the name of the bot itself.
 Eg. 
 ```
 [{"name":"TS3AudioBot","id":0},{"name":"<MyCustomName>","id":1}]
