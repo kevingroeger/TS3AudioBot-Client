@@ -4,6 +4,7 @@ import infoReducer from '../features/current/infoSlice'
 import playlistReducer from '../features/playlist/playlistSlice'
 import historyReducer from '../features/history/historySlice'
 import toplistReducer from '../features/toplist/toplistSlice'
+import playNowReducer from '../features/playNow/playNowSlice'
 
 export default configureStore({
   reducer: {
@@ -12,5 +13,6 @@ export default configureStore({
     playlist: playlistReducer,
     history: historyReducer,
     toplist: toplistReducer,
+    playNow: playNowReducer
   }
 })

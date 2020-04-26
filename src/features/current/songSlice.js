@@ -63,6 +63,7 @@ export const songSlice = createSlice({
     [playOrPause.fulfilled] : (state, action) => {
       if (action.payload === 204) {
         state.status = 'ready'
+        return
       }
       state.status = 'error'
     },
@@ -75,6 +76,7 @@ export const songSlice = createSlice({
     [nextSong.fulfilled] : (state, action) => {
       if (action.payload === 204) {
         state.status = 'ready'
+        return
       }
       state.status = 'error'
     },
