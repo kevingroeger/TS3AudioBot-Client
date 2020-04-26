@@ -1,37 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faPause, faForward } from '@fortawesome/free-solid-svg-icons'
-import { fetchApi } from '../../utils/dataAccess'
+import { useDispatch, useSelector } from 'react-redux'
+import { nextSongAction, playOrPauseAction, selectSong } from './songSlice'
 
-export default function CurrentControls ({
-  botId,
-  handleReload
-}) {
-  const [isPaused, setIsPaused] = useState(false)
-
-  useEffect(() => {
-    getPauseState()
-  }, [])
+export default function CurrentControls ({ botId }) {
+  const song = useSelector(selectSong)
+  const dispatch = useDispatch()
 
   const pause = () => {
-    fetchApi(`/api/bot/use/${botId}/(/pause`)
-      .catch(e => console.error(e))
-    getPauseState()
-  }
-
-  const getPauseState = () => {
-    fetchApi(`/api/bot/use/${botId}/(/song`)
-      .then(res => {
-        if (res.status !== 422) {
-          setIsPaused(res.Paused)
-          handleReload()
-        }
-      })
+    dispatch(playOrPauseAction(botId))
   }
 
   const next = () => {
-    fetchApi(`/api/bot/use/${botId}/(/next`)
-      .catch(e => console.error(e))
+    dispatch(nextSongAction(botId))
   }
 
   return (
@@ -41,7 +23,7 @@ export default function CurrentControls ({
           className='card_controls_current_playpause'
           onClick={() => pause()}
         >
-          {isPaused
+          {song?.Paused
             ? (
               <FontAwesomeIcon
                 icon={faPlay}

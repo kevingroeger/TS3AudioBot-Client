@@ -1,9 +1,9 @@
 import React from 'react'
 import { Card, Image } from 'react-bootstrap'
-import Controls from './Controls/Controls'
-import { radioArray } from '../utils/radio'
+import Controls from '../controls/Controls'
+import { radioArray } from '../../utils/radio'
 
-export default function Radio ({ botId, handleToast }) {
+export default function Radio ({ botId }) {
   return (
     <>
       <div className='radioMenu'>
@@ -23,7 +23,6 @@ export default function Radio ({ botId, handleToast }) {
               />
               <p>{item.name}</p>
               <Controls
-                handleToast={handleToast}
                 radioUrl={item.url}
                 botId={botId}
               />

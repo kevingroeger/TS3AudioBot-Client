@@ -101,7 +101,7 @@ export default function Settings ({
         <div className='baseUrl'>
           <h5>Base URL</h5>
           <input
-            type="text"
+            type='text'
             onChange={handleChangeUrl}
             value={url}
           />
@@ -109,7 +109,7 @@ export default function Settings ({
         <div className='bots'>
           <h5>Bot Config</h5>
           <input
-            type="text"
+            type='text'
             onChange={handleChangeBots}
             value={bots}
           />
@@ -132,7 +132,7 @@ export default function Settings ({
         <div className='bots'>
           <h5>API Key</h5>
           <input
-            type="text"
+            type='text'
             onChange={handleChangeApiKey}
             placeholder='Optional, you might not need this.'
             value={apiKey}

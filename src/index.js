@@ -1,17 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-/*
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-) */
+import store from './app/store'
+import { Provider } from 'react-redux'
 
 ReactDOM.render(
-  <App
-    render={() => <h1>>You broke something.</h1>}
-  />,
+  <Provider store={store}>
+    <App
+      render={() => <h1>>You broke something.</h1>}
+    />
+  </Provider>,
   document.getElementById('root')
 )
