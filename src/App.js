@@ -92,7 +92,7 @@ export default function App () {
             <p
               className='versionheader'
             >
-              v_0.9-redux
+              v_0.9
             </p>
             <Route exact strict path='/'>
               <Settings
