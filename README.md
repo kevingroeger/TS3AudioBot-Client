@@ -189,11 +189,8 @@ This is an early build, so there are some things that I couldn't yet implement.
 If you find a bug that is not listed here, please submit it as an Issue.
 
 #### Known issues:
- - When a new song starts, the app doesn't load the song information by itself if the reload button isn't pressed manually.
- - Some information isn't getting loaded correctly, eg. PlayCount in history and toplist.
- - The app sometimes shows a song that isn't playing anymore for a short time.
- 
- I'm currently updating the application to use [Redux Toolkit](https://redux-toolkit.js.org/). This will probably solve a lot of problems that I'm currently having.
+
+There are currently no known issues. If you find a bug please create an issue. Thanks! 
 
 ## Customizing the app
 
