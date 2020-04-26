@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import Controls from '../../components/Controls/Controls'
+import Controls from '../controls/Controls'
 import { useSelector } from 'react-redux'
 import { selectPlaylists } from './playlistSlice'
 

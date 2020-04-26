@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import ReactPlayer from 'react-player'
-import Controls from '../../components/Controls/Controls'
+import Controls from '../controls/Controls'
 
 export default function HistoryEntry ({
   item,

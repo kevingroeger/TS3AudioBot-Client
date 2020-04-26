@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, Image } from 'react-bootstrap'
-import Controls from '../../components/Controls/Controls'
+import Controls from '../controls/Controls'
 import { radioArray } from '../../utils/radio'
 
 export default function Radio ({ botId }) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Controls from '../../components/Controls/Controls'
+import Controls from '../controls/Controls'
 
 function ToplistEntry ({ botId, item, id: i }) {
   return (
