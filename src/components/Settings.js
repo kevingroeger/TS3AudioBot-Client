@@ -61,7 +61,7 @@ export default function Settings () {
         <p
           className='versionheader'
         >
-          v_1.0-beta
+          v_1.0-alpha
         </p>
         {fetchError && (
           <Alert
