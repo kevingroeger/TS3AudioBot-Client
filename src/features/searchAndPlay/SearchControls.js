@@ -13,11 +13,11 @@ export default function SearchControls ({ url, botId }) {
   const dispatch = useDispatch()
   const controlStatus = useSelector(selectControlStatus)
 
-  const addSongToPlayList = () => {
-    dispatch(songAddToQueueSearch(botId, url))
-  }
   const playSongNow = () => {
     dispatch(songPlayNowSearch(botId, url))
+  }
+  const addSongToPlayList = () => {
+    dispatch(songAddToQueueSearch(botId, url))
   }
 
   return (

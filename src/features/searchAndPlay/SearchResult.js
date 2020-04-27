@@ -1,6 +1,8 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import SearchControls from './SearchControls'
+import { useDispatch, useSelector } from 'react-redux'
+import { selectControlStatus, songPlayNowSearch } from '../controls/controlsSlice'
 
 function SearchResult ({
   title,
@@ -9,8 +11,16 @@ function SearchResult ({
   botId,
   url
 }) {
+  const dispatch = useDispatch()
+
+  const playSongNow = () => {
+    dispatch(songPlayNowSearch(botId, encodeURIComponent(url)))
+  }
   return (
-    <Row className='searchResultRow'>
+    <Row
+      className='searchResultRow'
+      onDoubleClick={() => playSongNow()}
+    >
       <Col sm={7}>
         {title}
       </Col>
