@@ -1,18 +1,28 @@
 const electron = require('electron')
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
-const path = require('path')
 const isDev = require('electron-is-dev')
 
-const config = require('electron-json-config')
 let mainWindow
+
+const path = require('path')
+const url = require('url')
+const remote = require('electron').remote
+const config = require('electron-json-config')
+const yts = require('yt-search')
 
 function createWindow () {
   mainWindow = new BrowserWindow({
     width: 1000,
     height: 600,
     frame: false,
-    webPreferences: { nodeIntegration: true },
+    webPreferences: {
+      nodeIntegration: true,
+      nodeIntegrationInSubFrames: true,
+      allowRunningInsecureContent: true,
+      plugins: true,
+      webSecurity: false
+    },
     resizable: false
   })
   mainWindow.loadURL(
