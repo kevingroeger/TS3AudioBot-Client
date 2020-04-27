@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { withRouter, useParams } from 'react-router-dom'
 import { Col, Nav, Row, Tab } from 'react-bootstrap'
 import DashBoard from '../dashBoard/DashBoard'
-import LoadingBar from './LoadingBar'
 import Playlists from '../playlist/Playlist'
 import Radio from '../radio/Radio'
 import History from '../history/History'
@@ -21,10 +20,14 @@ function BotMenu () {
 
   useEffect(() => {
     if (status === 'ready') {
-      dispatch(getInfoData(botId))
-      dispatch(getSongData(botId))
+      loadData()
     }
   }, [status])
+
+  const loadData = () => {
+    dispatch(getInfoData(botId))
+    dispatch(getSongData(botId))
+  }
 
   const handleTab = (tab) => {
     setActiveTab(tab)

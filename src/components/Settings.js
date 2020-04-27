@@ -59,6 +59,11 @@ export default function Settings () {
     <>
       <div className='settingsHl'>
         <h4>Configuration</h4>
+        <p
+          className='versionheader'
+        >
+          v_0.9-redux
+        </p>
         {fetchError && (
           <Alert
             variant='danger'

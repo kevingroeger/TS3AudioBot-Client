@@ -15,6 +15,7 @@ import NoContentCard from './Content/NoContentCard'
 import MediaCard from './Content/MediaCard'
 import CurrentControls from './CurrentControls'
 import { Col } from 'react-bootstrap'
+import QueuedItems from './Content/QueuedItems'
 
 export default function Current ({ botId }) {
   const song = useSelector(selectSong)
@@ -43,9 +44,13 @@ export default function Current ({ botId }) {
           : <NoContentCard />
         }
       </Col>
-      <Col sm={7} className='playMenuControls' >
+      <Col sm={5} className='playMenuControls' >
         <CurrentControls botId={botId} />
       </Col>
+      <Col sm={2} className='playMenuQueued' >
+        <QueuedItems />
+      </Col>
+
     </div>
   )
 }

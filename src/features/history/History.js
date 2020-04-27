@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { selectHistory, getLastTwelveHistoryEntries } from './historySlice'
+import { selectHistory, getLast20HistoryEntries } from './historySlice'
 import HistoryEntry from './HistoryEntry'
 import LoadingBar from '../botmenu/LoadingBar'
 
@@ -17,7 +17,7 @@ export default function History ({ botId }) {
   }, [botId])
 
   const loadData = () => {
-    dispatch(getLastTwelveHistoryEntries(botId))
+    dispatch(getLast20HistoryEntries(botId))
   }
 
   if (historyData.status === 'init' || historyData.status === 'loading') {

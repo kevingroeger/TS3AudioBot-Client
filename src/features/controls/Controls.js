@@ -52,13 +52,7 @@ export default function Controls ({
 
   return (
     <div
-      className={
-        isTopList
-          ? 'card_controls_toplist'
-          : isRadio
-          ? 'card_controls_radio'
-          : 'card_controls'
-      }
+      className={'card_controls'}
     >
       <OverlayTrigger
         placement='top'

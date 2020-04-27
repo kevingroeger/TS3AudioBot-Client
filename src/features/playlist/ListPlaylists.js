@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import Controls from '../controls/Controls'
 import { useSelector } from 'react-redux'
 import { selectPlaylists } from './playlistSlice'
@@ -10,18 +10,20 @@ export default function Listplaylists ({ botId }) {
     <div className='playlist_list'>
       {Array.isArray(playlists.playlists) && playlists.playlists.length > 0 ? playlists.playlists.map((item, i) => {
         return (
-          <Card
-            className='singlePlaylist'
-            key={`playlist_${i}`}
-          >
-            <Card.Title>Name: {item.Title}</Card.Title>
-            <Card.Subtitle><p>Id: {item.Id}</p></Card.Subtitle>
-            <Card.Body>Songs: {item.SongCount}</Card.Body>
-            <Controls
-              botId={botId}
-              listId={item.Id}
-            />
-          </Card>)
+          <Row className='searchResultRow'>
+            <Col sm={5} className='firstcol'>
+              {item.Title}
+            </Col>
+            <Col sm={4}>
+              Songs: {item.SongCount}
+            </Col>
+            <Col sm={3}>
+              <Controls
+                botId={botId}
+                listId={item.Id}
+              />
+            </Col>
+          </Row>)
       }) : (
         <div className='singlePlaylist'>
           No Playlists

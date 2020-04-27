@@ -36,8 +36,8 @@ export default function Playlist ({ botId }) {
       />
       <Button
         className='createNewPlaylistButton'
-        variant='dark'
         onClick={handleShowModal}
+        size={'sm'}
       >
         New Playlist <FontAwesomeIcon icon={faPlusCircle} />
       </Button>

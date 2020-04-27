@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Image } from 'react-bootstrap'
+import { Card, Col, Image, Row } from 'react-bootstrap'
 import Controls from '../controls/Controls'
 import { radioArray } from '../../utils/radio'
 
@@ -9,24 +9,17 @@ export default function Radio ({ botId }) {
       <div className='radioMenu'>
         {radioArray.map((item, i) => {
           return (
-            <Card
-              key={i}
-              bg={'dark'}
-              text={'light'}
-              className='transparency'
-            >
-              <Image
-                height={200}
-                width={200}
-                src={item.src}
-                roundedCircle
-              />
-              <p>{item.name}</p>
-              <Controls
-                radioUrl={item.url}
-                botId={botId}
-              />
-            </Card>
+            <Row className='searchResultRow'>
+              <Col sm={8} className={'firstcol'}>
+                {item.name}
+              </Col>
+              <Col sm={4}>
+                <Controls
+                  radioUrl={item.url}
+                  botId={botId}
+                />
+              </Col>
+            </Row>
           )}
         )}
       </div>

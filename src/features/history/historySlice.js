@@ -5,7 +5,7 @@ import { songSlice } from '../current/songSlice'
 const fetchHistoryData = createAsyncThunk(
   `/history`,
   async (botId) => {
-    return await fetchApi(`/api/bot/use/${botId}/(/history/last/12`)
+    return await fetchApi(`/api/bot/use/${botId}/(/history/last/20`)
   }
 )
 
@@ -37,7 +37,7 @@ const historySlice = createSlice({
 })
 
 
-export const getLastTwelveHistoryEntries = botId => async dispatch => {
+export const getLast20HistoryEntries = botId => async dispatch => {
   try {
     await dispatch(fetchHistoryData(botId))
   } catch (e) {

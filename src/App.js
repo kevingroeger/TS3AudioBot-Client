@@ -22,11 +22,7 @@ export default function App () {
 
   return (
     <Router>
-      <Navbar
-        bg='dark'
-        variant='dark'
-        className='NavBarSticky1'
-      >
+      <Navbar className='NavBarSticky1'>
         {Array.isArray(botArray) && botArray.map((bot, i) => {
           return (
             <NavLink
@@ -50,11 +46,7 @@ export default function App () {
           <FontAwesomeIcon icon={faCog}/>
         </NavLink>
       </Navbar>
-      <Navbar
-        bg='dark'
-        variant='dark'
-        className='NavBarSticky2'
-      >
+      <Navbar className='NavBarSticky2'>
         <div className='controlWindow'>
           <Button
             size='sm'

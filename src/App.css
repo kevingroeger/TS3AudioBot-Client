@@ -84,22 +84,11 @@
 }
 
 .history {
-  margin: 1.5rem 0;
-}
-
-.historyEntries {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.historyEntries h5 {
-  margin-right: 1rem;
+  margin: 1.5rem 0 5rem 0;
 }
 
 .NavBarSticky1 {
+  background: rgba(42,42,42,1);
   position: fixed;
   -webkit-user-select: none;
   -webkit-app-region: drag;
@@ -111,6 +100,7 @@
 }
 
 .NavBarSticky2 {
+  background: rgba(42,42,42,1);
   position: fixed;
   z-index: 3000;
   width: 6.5vw;
@@ -119,14 +109,9 @@
   height: 2.66rem;
 }
 
-
-.ytplayer {
-  text-align: center;
-}
-
 .card_controls svg{
   cursor: pointer;
-  margin: 1rem 1rem 0 1rem;
+  margin: 0 .66rem;
 }
 
 .card_controls_toplist svg{
@@ -153,69 +138,22 @@
   margin-top: .75rem;
 }
 
-.card_controls_radio svg {
-  margin-top: 4rem;
-}
-
-.reloadIcon {
-  color: black;
-  margin-top: .5625rem;
-}
-
-.reloadIcon:hover {
-  color: black;
-}
-
-.reloadIconDiv {
-  position: absolute;
-  right: 2rem;
-  top: 3.5rem;
-  background: #fff;
-  border-radius: 2rem;
-  height: 2.25rem;
-  min-width: 2.25rem;
-  text-align: center;
-  vertical-align: center;
-  box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.75);
-}
-
-.reloadIconDiv:hover {
-  background: #ededed;
-  cursor: pointer;
-}
-
 .playlistInfo {
   text-align: center;
   margin: 1rem 1rem 0 1rem;
   display: block;
 }
 
-.playlistInfo h4 {
-  text-align: center;
-  margin: 0 0 1.5rem 4rem;
-  display: inline-block;
-}
-
 .createNewPlaylistButton {
+  background: rgba(64,90,116,1);
+  border: 1px solid rgba(32,45,58,1);
   display: block;
+  margin: 1rem 0 1rem -1rem;
 }
 
-.playlist_list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.singlePlaylist {
-  color: #000;
-  min-width: 20%;
-  text-align: center;
-  padding: 1rem 0;
-  margin: .5rem;
-  border: 1px solid black;
-  background: linear-gradient(112deg, rgba(255,255,255,.3) 20%, rgba(255,255,255,.65) 100%);
+.createNewPlaylistButton:hover {
+  background: rgba(96,135,174,1);
+  border: 1px solid rgba(32,45,58,1);
 }
 
 .modal {
@@ -234,7 +172,7 @@
   min-height: 12rem;
   min-width: 30rem;
   position: fixed;
-  background-color: #e5e5e5;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
   0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
 }
@@ -266,6 +204,13 @@
 .modalContents>button {
   margin: 2rem 0;
   text-align: center;
+  background: rgba(64,90,116,1);
+  border: 1px solid rgba(32,45,58,1);
+}
+
+.modalContents>button:hover {
+  background: rgba(96,135,174,1);
+  border: 1px solid rgba(32,45,58,1);
 }
 
 .display-block {
@@ -281,10 +226,8 @@
 }
 
 .queueItem {
-  color: rgba(250,250,250, .86);
-  font-size: .8rem;
-  line-height: .9rem;
-  margin-bottom: .3rem;
+  font-size: .6rem;
+  text-align: left;
 }
 
 .topList {
@@ -328,19 +271,27 @@ svg:hover {
 
 .radioMenu {
   text-align: center;
-  margin: 1rem;
+  margin: 2rem 1rem 3rem 1rem;
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
 }
 
-.radioMenu div{
-  margin: 1rem 0;
-  padding: .35rem;
+.topList {
+  text-align: center;
+  margin: 1rem 1rem 3rem 1rem;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.radioCard {
-  border: 1px solid black;
+.historyEntries {
+  display: flex;
+  margin: 2rem 1rem 3rem 0rem;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .versionheader {
@@ -352,9 +303,14 @@ svg:hover {
 }
 
 .controlWindow {
+  background: rgba(42,42,42,.84);
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.controlWindow>button {
+  background: rgba(42,42,42,.84);
 }
 
 .minimizeWindow {
@@ -367,12 +323,10 @@ svg:hover {
   z-index: 5000;
 }
 
-.minimizeWindow svg:hover {
-  color: unset;
-}
-
-.closeWindow svg:hover {
-  color: unset;
+.minimizeWindow svg:hover, .closeWindow svg:hover, .controlWindow>button:hover {
+  color: white;
+  cursor: pointer;
+  background: rgba(64,64,64,.64);
 }
 
 .btn svg:hover {
@@ -484,11 +438,6 @@ svg:hover {
   margin-top: .5rem;
 }
 
-.youtubeCards {
-  margin: 0.5rem;
-  max-width: 18rem;
-}
-
 .trashCan {
   color: red;
   position: absolute;
@@ -522,6 +471,12 @@ svg:hover {
   align-items: center;
 }
 
+.songsInQueue {
+  display: flex;
+  flex-direction: column;
+  font-size: .75rem;
+}
+
 .playMenuShow {
   display: flex;
 }
@@ -534,11 +489,12 @@ svg:hover {
 }
 
 .customTabs {
-  background: black;
+  position: fixed;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(45,46,53,1) 0%, rgba(16,23,29,1) 81.3% );
   border-right: 1px solid black;
   min-height: 90vh;
   height: 100%;
-  width: 100%;
+  width: 23%;
   padding: 1rem .5rem 0 .5rem;
 }
 
@@ -578,14 +534,9 @@ svg:hover {
 }
 
 .searchResultRow {
-  background: rgba(20,20,20,.35);
+  width: 100%;
   border-top: 1px solid white;
-}
-
-.searchResultRow {
-  display: flex;
   font-size: .8rem;
-  justify-content: flex-start;
   padding: .25rem 0;
 }
 
@@ -614,4 +565,8 @@ svg:hover {
 
 .somemargintop {
   margin-top: 1rem;
+}
+
+.firstcol {
+  text-align: left;
 }
