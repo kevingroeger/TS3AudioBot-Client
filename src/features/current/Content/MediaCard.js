@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { selectSong } from '../songSlice'
 
-export default function YoutubeCard () {
+export default function MediaCard () {
   const [radioStation, setRadioStation] = useState('not identified')
   const song = useSelector(selectSong)
 

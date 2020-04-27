@@ -84,7 +84,7 @@
 }
 
 .history {
-  margin: 1.5rem 0 5rem 0;
+  margin: 1.5rem 1rem 5rem 0;
 }
 
 .NavBarSticky1 {
@@ -459,7 +459,7 @@ svg:hover {
 }
 
 .playMenu {
-  background: rgba(64,90,116,1);
+  background-image: radial-gradient( circle farthest-corner at 20% 50%,  rgba(32,45,58,1) 10%, rgba(43,60,77,1) 71.3% );
   color: white;
   border-top: 1px solid black;
   height: 3.5rem;
@@ -514,7 +514,7 @@ svg:hover {
 
 .searchAndPlayDiv {
   min-height: 90vh;
-  margin: 1rem 2rem 5rem 0;
+  margin: 1rem 1rem 5rem 1rem;
 }
 
 .searchAndPlayDiv input {
@@ -561,6 +561,12 @@ svg:hover {
 .loadingDiv {
   display: flex;
   justify-content: center;
+}
+
+.loadingBar {
+  position: absolute;
+  z-index: 200000;
+  top: 3rem;
 }
 
 .somemargintop {

@@ -11,10 +11,10 @@ function SearchResult ({
 }) {
   return (
     <Row className='searchResultRow'>
-      <Col sm={8}>
+      <Col sm={7}>
         {title}
       </Col>
-      <Col sm={2}>
+      <Col sm={3}>
         {author}
       </Col>
       <Col sm={1} className='searchResultTimeStamp'>

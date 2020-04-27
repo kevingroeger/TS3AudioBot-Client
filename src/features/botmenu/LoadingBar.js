@@ -6,7 +6,7 @@ import { selectSong } from '../current/songSlice'
 export default function LoadingBar () {
   const song = useSelector(selectSong)
   return (
-    <>
+    <div className='loadingBar'>
       {(song?.status === 'init' || song?.status === 'loading') && (
         <BarLoader
           loading
@@ -15,6 +15,6 @@ export default function LoadingBar () {
           height='5px'
         />
       )}
-    </>
+    </div>
   )
 }

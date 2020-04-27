@@ -6,7 +6,6 @@ import { fetchApi } from '../utils/dataAccess'
 const config = window.require('electron-json-config')
 
 export default function Settings () {
-  const [showAlert, setShowAlert] = useState(true)
   const [url, setUrl] = useState(config.get('baseUrl', window.Configs.baseUrl))
   const [bots, setBots] = useState(JSON.stringify(config.get('bots', window.Configs.botArray)))
   const [apiKey, setApiKey] = useState(config.get('apiKey', window.Configs.apiKey))
@@ -62,7 +61,7 @@ export default function Settings () {
         <p
           className='versionheader'
         >
-          v_0.9-redux
+          v_1.0-beta
         </p>
         {fetchError && (
           <Alert

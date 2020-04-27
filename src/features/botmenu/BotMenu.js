@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { withRouter, useParams } from 'react-router-dom'
 import { Col, Nav, Row, Tab } from 'react-bootstrap'
-import DashBoard from '../dashBoard/DashBoard'
 import Playlists from '../playlist/Playlist'
 import Radio from '../radio/Radio'
 import History from '../history/History'
@@ -11,6 +10,8 @@ import { getSongData } from '../current/songSlice'
 import Current from '../current/Current'
 import { selectControlStatus } from '../controls/controlsSlice'
 import { getInfoData } from '../current/infoSlice'
+import LoadingBar from './LoadingBar'
+import SearchAndPlayNow from '../searchAndPlay/SearchAndPlayNow'
 
 function BotMenu () {
   let { botId } = useParams()
@@ -35,6 +36,7 @@ function BotMenu () {
 
   return (
     <>
+      <LoadingBar/>
       <Tab.Container
         activeKey={activeTab}
         onSelect={(tab) => handleTab(tab)}
@@ -86,7 +88,7 @@ function BotMenu () {
           <Col sm={9}>
             <Tab.Content>
               <Tab.Pane eventKey='dashBoard'>
-                <DashBoard botId={botId} />
+                <SearchAndPlayNow botId={botId} />
               </Tab.Pane>
               <Tab.Pane eventKey="PlayList">
                 <Playlists botId={botId} />

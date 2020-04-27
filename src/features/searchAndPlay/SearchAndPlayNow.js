@@ -33,8 +33,12 @@ function SearchAndPlayNow ({ botId }) {
         />
         <Button
           size={'sm'}
-          onClick={() => handleSearch()}
-          type={'submit'}
+          onClick={() => {
+            if (searchValue !== '' && searchValue !== null && typeof searchValue !== undefined) {
+              handleSearch()
+                .catch(e => console.error(e))
+            }}}
+          type='submit'
           className='searchAndPlayButton'
         >
           Search
@@ -42,12 +46,12 @@ function SearchAndPlayNow ({ botId }) {
       </form>
       <div className='somemargintop'>
         {searchStatus === 'loading' &&
-          <div className='loadingDiv'>
-            <ClipLoader
-              color='#fff'
-              size={100}
-            />
-          </div>
+        <div className='loadingDiv'>
+          <ClipLoader
+            color='#fff'
+            size={100}
+          />
+        </div>
         }
         {searchStatus === 'ready' &&
         searchResults.map((item, i) => {
@@ -59,8 +63,7 @@ function SearchAndPlayNow ({ botId }) {
               timestamp={item.timestamp}
               author={item.author.name}
               url={item.url}
-            />
-            )
+            />)
         })}
       </div>
     </div>
