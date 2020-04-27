@@ -20,7 +20,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-spinners": "^0.8.1",
-    "react-timeout": "^1.2.0"
+    "react-timeout": "^1.2.0",
+    "yt-search": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "cheerio": "^0.22.0",
     "electron": "^8.2.1",
     "react-redux": "^7.2.0"
   }

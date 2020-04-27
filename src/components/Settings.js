@@ -1,15 +1,11 @@
 import React, { useState } from 'react'
 import { Alert, Button, OverlayTrigger, Tooltip } from 'react-bootstrap'
-import { colorArray } from '../utils/colors'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload, faTrash } from '@fortawesome/free-solid-svg-icons'
 import { fetchApi } from '../utils/dataAccess'
 const config = window.require('electron-json-config')
 
-export default function Settings ({
-  background,
-  handleBackgroundChange
-}) {
+export default function Settings () {
   const [showAlert, setShowAlert] = useState(true)
   const [url, setUrl] = useState(config.get('baseUrl', window.Configs.baseUrl))
   const [bots, setBots] = useState(JSON.stringify(config.get('bots', window.Configs.botArray)))
@@ -17,7 +13,6 @@ export default function Settings ({
   const [fetchError, setFetchError] = useState(false)
 
   const handleSave = () => {
-    config.set('background', background)
     config.set('bots', JSON.parse(bots))
     config.set('baseUrl', url)
     config.set('apiKey', apiKey)
@@ -64,31 +59,6 @@ export default function Settings ({
     <>
       <div className='settingsHl'>
         <h4>Configuration</h4>
-        <div className='styles'>
-          <h5>Style</h5>
-          {colorArray.map((colorValue, i) => {
-            return (
-              <button
-                key={i}
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  background: colorValue
-                }}
-                onClick={() => handleBackgroundChange(colorValue)}
-              />
-            )
-          })}
-        </div>
-        {showAlert && (
-          <Alert
-            variant='danger'
-            dismissible
-            onClose={() => setShowAlert(false)}
-          >
-            Changing the configuration below can break the app.<br/>
-            Do <strong>NOT</strong> change any values if you don't know what you're doing!
-          </Alert>)}
         {fetchError && (
           <Alert
             variant='danger'

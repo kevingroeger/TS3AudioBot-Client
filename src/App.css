@@ -1,9 +1,11 @@
 .background {
   font-family: Roboto, sans-serif;
+  color: white;
   overflow-x: hidden;
-  padding-top: 3.67rem;
+  padding-top: 2.75rem;
   height: 100vh;
   width: 100vw;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
 }
 
 .NavLink {
@@ -104,6 +106,7 @@
   z-index: 3000;
   width: 93.5vw;
   overflow: visible;
+  border-bottom: 1px solid rgba(170,170,170,.66);
   height: 2.66rem;
 }
 
@@ -112,69 +115,13 @@
   z-index: 3000;
   width: 6.5vw;
   right: 0;
+  border-bottom: 1px solid rgba(170,170,170,.66);
   height: 2.66rem;
 }
 
 
 .ytplayer {
   text-align: center;
-}
-
-.dashBoard {
-  margin: 1rem 0;
-  text-align: center;
-}
-
-.dashBoard_Card {
-  text-align: center;
-  margin: 0 1.5rem 1rem 1.5rem;
-  padding-bottom: 1rem;
-}
-
-.dashBoard_Card_Title {
-  margin: .6rem 2rem .5rem 2rem;
-}
-
-.dashBoard_youtube {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.dashBoard_youtube > div {
-  margin: 0 .25rem;
-  width: 24rem;
-}
-
-.card_controls_current {
-  display: flex;
-  justify-content: space-around;
-}
-
-.card_controls_current_playpause {
-  width: 30%;
-  background: #343a40;
-  border: 3px solid white;
-  cursor: pointer;
-  border-radius: 3rem;
-}
-
-.card_controls_current_playpause:hover {
-  background: #42494f;
-  color: #afafaf;
-}
-
-.card_controls_current_next {
-  width: 30%;
-  background: #343a40;
-  border: 3px solid white;
-  cursor: pointer;
-  border-radius: 3rem;
-}
-
-.card_controls_current_next:hover {
-  background: #42494f;
-  color: #afafaf;
 }
 
 .card_controls svg{
@@ -281,7 +228,7 @@
 
 .modal-main {
   top: 20%;
-  left: 20%;
+  left: 32%;
   margin: 0 2rem;
   padding: 0 2rem;
   min-height: 12rem;
@@ -439,8 +386,7 @@ svg:hover {
 .playNow {
   text-align: center;
   color: white;
-  background: #343a40;
-  border: solid 1px black;
+  background: #464646;
   border-radius: .3rem;
   padding-bottom: 2rem;
   margin: 0 17% 1rem 17%;
@@ -501,6 +447,7 @@ svg:hover {
 
 .settingsHl {
   text-align: center;
+  margin-top: 1rem;
 }
 
 .settingsHl>.alert {
@@ -526,9 +473,6 @@ svg:hover {
   z-index: 10000;
 }
 
-.transparency {
-  background: rgba(52,58,64, 0.88) !important;
-}
 
 .spacing {
   padding-right: .7rem;
@@ -550,4 +494,124 @@ svg:hover {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+}
+
+.playMenuControls {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.playMenuControls>div {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.playMenuShow>div {
+  margin: 0 .5rem;
+}
+
+.playMenu {
+  background: rgba(64,90,116,1);
+  color: white;
+  border-top: 1px solid black;
+  height: 3.5rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playMenuShow {
+  display: flex;
+}
+
+.playMenuTitle {
+  padding-top: .25rem;
+  font-weight: 300;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+}
+
+.customTabs {
+  background: black;
+  border-right: 1px solid black;
+  min-height: 90vh;
+  height: 100%;
+  width: 100%;
+  padding: 1rem .5rem 0 .5rem;
+}
+
+.nav-pills .nav-link {
+  color: white;
+}
+
+.nav-pills .nav-link:hover {
+  background: rgba(64,90,116,1);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background: rgba(96,135,174,1);
+  width: 100%;
+  color: white;
+}
+
+.searchAndPlayDiv {
+  min-height: 90vh;
+  margin: 1rem 2rem 5rem 0;
+}
+
+.searchAndPlayDiv input {
+  margin: 0 1rem 0 -.8rem;
+  text-align: right;
+  border-radius: 1rem;
+}
+
+.searchAndPlayButton {
+  background: rgba(64,90,116,1);
+  border: 1px solid rgba(32,45,58,1);
+}
+
+.searchAndPlayButton:hover {
+  background: rgba(96,135,174,1);
+  border: 1px solid rgba(32,45,58,1);
+}
+
+.searchResultRow {
+  background: rgba(20,20,20,.35);
+  border-top: 1px solid white;
+}
+
+.searchResultRow {
+  display: flex;
+  font-size: .8rem;
+  justify-content: flex-start;
+  padding: .25rem 0;
+}
+
+.searchResultRow:hover {
+  background: rgba(96,135,174,1);
+}
+
+.searchResultRow > div {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.searchResultTimeStamp {
+  text-align: right;
+}
+
+.searchControls>svg {
+  cursor: pointer;
+  margin: 0 .33rem;
+}
+
+.loadingDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.somemargintop {
+  margin-top: 1rem;
 }

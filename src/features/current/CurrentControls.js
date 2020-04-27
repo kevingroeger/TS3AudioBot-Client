@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay, faPause, faForward } from '@fortawesome/free-solid-svg-icons'
+import { faPlay, faPause, faForward, faBackward } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { nextSongAction, playOrPauseAction, selectSong } from './songSlice'
 
@@ -12,36 +12,37 @@ export default function CurrentControls ({ botId }) {
     dispatch(playOrPauseAction(botId))
   }
 
+  const prev = () => {
+    dispatch(nextSongAction(botId))
+  }
+
   const next = () => {
     dispatch(nextSongAction(botId))
   }
 
   return (
-    <div className='stickToBottom'>
-      <div className='card_controls_current'>
-        <div
-          className='card_controls_current_playpause'
-          onClick={() => pause()}
-        >
-          {song?.Paused
-            ? (
-              <FontAwesomeIcon
-                icon={faPlay}
-              />)
-            : (
-              <FontAwesomeIcon
-                icon={faPause}
-              />)}
-        </div>
-        <div
-          className='card_controls_current_next'
-          onClick={next}
-        >
-          <FontAwesomeIcon
-            icon={faForward}
-          />
-        </div>
+    <>
+      <div onClick={() => prev()}>
+        <FontAwesomeIcon
+          icon={faBackward}
+        />
       </div>
-    </div>
+      <div onClick={() => pause()}>
+        {song?.Paused
+          ? (
+            <FontAwesomeIcon
+              icon={faPlay}
+            />)
+          : (
+            <FontAwesomeIcon
+              icon={faPause}
+            />)}
+      </div>
+      <div onClick={next}>
+        <FontAwesomeIcon
+          icon={faForward}
+        />
+      </div>
+    </>
   )
 }

@@ -1,15 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Card } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import { selectSong } from '../songSlice'
-import CurrentControls from '../CurrentControls'
-import { selectInfo } from '../infoSlice'
-import QueuedItems from './QueuedItems'
 
-export default function YoutubeCard ({ botId }) {
+export default function YoutubeCard () {
   const [radioStation, setRadioStation] = useState('not identified')
   const song = useSelector(selectSong)
-  const info = useSelector(selectInfo)
 
   useEffect(() => {
     setRadioStation(getRadioName(song.Link))
@@ -34,17 +29,15 @@ export default function YoutubeCard ({ botId }) {
   }
   return (
     <>
-      <Card.Title className='dashBoard_Card_Title'>
-        {song?.Title}
-      </Card.Title>
-      <p className='radioTitle'>
+      <div>
         {radioStation !== 'not identified'
           ? 'Radio ' + radioStation
           : 'Media'
         }
-      </p>
-      {info?.status === 'ready' && <QueuedItems />}
-      <CurrentControls botId={botId} />
+      </div>
+      <div>
+        {song?.Title}
+      </div>
     </>
   )
 }

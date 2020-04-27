@@ -78,22 +78,7 @@ export default function App () {
       </Navbar>
       <Switch>
         <>
-          <div
-            className='background'
-            style={{
-              background: background,
-              color:
-                background !== '#efefef'
-                  && background !== 'linear-gradient( 109.6deg,  rgba(247,202,201,1) 20.6%, rgba(146,168,209,1) 85.9% )'
-                  ? 'white'
-                  : 'black'
-            }}
-          >
-            <p
-              className='versionheader'
-            >
-              v_0.9
-            </p>
+          <div className='background'>
             <Route exact strict path='/'>
               <Settings
                 handleBackgroundChange={handleBackgroundChange}

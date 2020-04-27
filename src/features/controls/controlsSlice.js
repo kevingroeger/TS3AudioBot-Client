@@ -15,6 +15,22 @@ const fetchSongAddToQueue = createAsyncThunk(
   }
 )
 
+
+const fetchSongPlayNowSearch = createAsyncThunk(
+  `/controls/song/search/now`,
+  async ({botId, url}) => {
+    return await fetchApi(`/api/bot/use/${botId}/(/play/${url}`)
+  }
+)
+
+const fetchSongAddToQueueSearch = createAsyncThunk(
+  `/controls/song/search/queue`,
+  async ({botId, url}) => {
+    return await fetchApi(`/api/bot/use/${botId}/(/add/${url}`)
+  }
+)
+
+
 const fetchListPlayNow = createAsyncThunk(
   `/controls/list/now`,
   async ({botId, listId}) => {
@@ -83,19 +99,6 @@ export const controlsSlice = createSlice({
     [fetchListPlayNow.rejected] : state => {
       state.status = 'error'
     },
-    [fetchSongPlayNow.pending] : state => {
-      state.status = 'loading'
-    },
-    [fetchSongPlayNow.fulfilled] : (state, action) => {
-      if (action.payload === 204) {
-        state.status = 'ready'
-        return
-      }
-      state.status = 'error'
-    },
-    [fetchSongPlayNow.rejected] : state => {
-      state.status = 'error'
-    },
     [fetchListAddToQueue.pending] : state => {
       state.status = 'loading'
     },
@@ -109,6 +112,45 @@ export const controlsSlice = createSlice({
     [fetchListAddToQueue.rejected] : state => {
       state.status = 'error'
     },
+    [fetchRadioPlayNow.pending] : state => {
+      state.status = 'loading'
+    },
+    [fetchRadioPlayNow.fulfilled] : (state, action) => {
+      if (action.payload === 204) {
+        state.status = 'ready'
+        return
+      }
+      state.status = 'error'
+    },
+    [fetchRadioPlayNow.rejected] : state => {
+      state.status = 'error'
+    },
+    [fetchSongPlayNowSearch.pending] : state => {
+      state.status = 'loading'
+    },
+    [fetchSongPlayNowSearch.fulfilled] : (state, action) => {
+      if (action.payload === 204) {
+        state.status = 'ready'
+        return
+      }
+      state.status = 'error'
+    },
+    [fetchSongPlayNowSearch.rejected] : state => {
+      state.status = 'error'
+    },
+    [fetchSongAddToQueueSearch.pending] : state => {
+      state.status = 'loading'
+    },
+    [fetchSongAddToQueueSearch.fulfilled] : (state, action) => {
+      if (action.payload === 204) {
+        state.status = 'ready'
+        return
+      }
+      state.status = 'error'
+    },
+    [fetchSongAddToQueueSearch.rejected] : state => {
+      state.status = 'error'
+    }
   }
 })
 
@@ -151,6 +193,23 @@ export const listPlayNow = (botId, listId) => async dispatch => {
     console.error(e)
   }
 }
+
+export const songPlayNowSearch = (botId, url) => async dispatch => {
+  try {
+    await dispatch(fetchSongPlayNowSearch({botId, url}))
+  } catch (e) {
+    console.error(e)
+  }
+}
+
+export const songAddToQueueSearch = (botId, url) => async dispatch => {
+  try {
+    await dispatch(fetchSongAddToQueueSearch({botId, url}))
+  } catch (e) {
+    console.error(e)
+  }
+}
+
 
 export const selectControlStatus = state => state.controls.status
 

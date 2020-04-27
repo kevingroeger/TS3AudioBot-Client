@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faPlus, faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { OverlayTrigger, Tooltip } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-import { getInfoData } from '../current/infoSlice'
-import { getSongData } from '../current/songSlice'
 import {
   listAddToQueue,
   listPlayNow,
@@ -35,14 +33,6 @@ export default function Controls ({
       setIsRadio(true)
     }
   }, [])
-
-  useEffect(() => {
-    if (status === 'ready') {
-      dispatch(getInfoData(botId))
-      dispatch(getSongData(botId))
-    }
-  }, [status])
-
 
   const addSongToPlayList = () => {
     dispatch(songAddToQueue(botId, index))

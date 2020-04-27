@@ -1,10 +1,18 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import ReactPlayer from 'react-player'
 
 export default function NoContentCard () {
   return (
-    <Card.Title>
-      No song is currently playing.
-    </Card.Title>
+    <>
+      <ReactPlayer
+        width='5rem'
+        height='3rem'
+        light
+        playIcon={<div />}
+      />
+      <div className='playMenuTitle'>
+        None
+      </div>
+    </>
   )
 }

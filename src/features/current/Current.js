@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { Card } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 
 import {
@@ -11,11 +10,11 @@ import {
   getSongData
 } from './songSlice'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSyncAlt } from '@fortawesome/free-solid-svg-icons'
 import YoutubeCard from './Content/YoutubeCard'
 import NoContentCard from './Content/NoContentCard'
 import MediaCard from './Content/MediaCard'
+import CurrentControls from './CurrentControls'
+import { Col } from 'react-bootstrap'
 
 export default function Current ({ botId }) {
   const song = useSelector(selectSong)
@@ -35,28 +34,18 @@ export default function Current ({ botId }) {
   }
 
   return (
-    <>
-      <div
-        className='reloadIconDiv'
-        onClick={loadData}
-      >
-        <FontAwesomeIcon
-          className='reloadIcon'
-          icon={faSyncAlt}
-        />
-      </div>
-      <Card
-        className='dashBoard_Card'
-        bg='dark'
-        text='light'
-      >
+    <div className='playMenu'>
+      <Col sm={5} className='playMenuShow'>
         {(song.status === 'ready' || song.status === 'control')
           ? (song.AudioType === 'youtube'
             ? <YoutubeCard botId={botId} />
             : <MediaCard botId={botId} />)
           : <NoContentCard />
         }
-      </Card>
-    </>
+      </Col>
+      <Col sm={7} className='playMenuControls' >
+        <CurrentControls botId={botId} />
+      </Col>
+    </div>
   )
 }

@@ -6,6 +6,7 @@ const path = require('path')
 const url = require('url')
 const remote = require('electron').remote
 const config = require('electron-json-config')
+const yts = require('yt-search')
 
 let mainWindow
 
@@ -15,7 +16,13 @@ function createWindow () {
     height: 600,
     frame: false,
     transparent: true,
-    webPreferences: { nodeIntegration: true },
+    webPreferences: {
+      nodeIntegration: true,
+      nodeIntegrationInSubFrames: true,
+      allowRunningInsecureContent: true,
+      plugins: true,
+      webSecurity: false
+    },
     resizable: false
   })
 
