@@ -6,7 +6,7 @@ const baseUrl = config.get('baseUrl', window.Configs.baseUrl)
 export const fetchApi = async (url) => {
   if (apiKey !== '' && apiKey) {
     const bufferStr = new Buffer(apiKey)
-    const response = await fetch(url,
+    const response = await fetch(baseUrl + url,
       {
         headers: {
           'Authorization': `Basic ${bufferStr.toString('base64')}`
