@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import SearchControls from './SearchControls'
-import { useDispatch, useSelector } from 'react-redux'
-import { selectControlStatus, songPlayNowSearch } from '../controls/controlsSlice'
+import { useDispatch } from 'react-redux'
+import { songPlayNowSearch } from '../controls/controlsSlice'
 
 function SearchResult ({
   title,
@@ -12,10 +12,10 @@ function SearchResult ({
   url
 }) {
   const dispatch = useDispatch()
-
   const playSongNow = () => {
     dispatch(songPlayNowSearch(botId, encodeURIComponent(url)))
   }
+
   return (
     <Row
       className='searchResultRow'
