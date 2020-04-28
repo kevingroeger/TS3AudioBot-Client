@@ -21,10 +21,10 @@ function SearchResult ({
       className='searchResultRow'
       onDoubleClick={() => playSongNow()}
     >
-      <Col sm={7}>
+      <Col sm={7} className='cantMarkText'>
         {title}
       </Col>
-      <Col sm={3}>
+      <Col sm={3} className='cantMarkText'>
         {author}
       </Col>
       <Col sm={1} className='searchResultTimeStamp'>

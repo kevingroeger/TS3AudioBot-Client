@@ -35,7 +35,8 @@
     "react-player": "^1.15.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "react-spinners": "^0.8.1"
+    "react-spinners": "^0.8.1",
+    "yt-search": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

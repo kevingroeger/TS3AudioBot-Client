@@ -576,3 +576,12 @@ svg:hover {
 .firstcol {
   text-align: left;
 }
+
+div.react-player__preview:hover {
+  cursor: default!important;
+}
+
+.cantMarkText {
+  user-select: none;
+  -webkit-user-select: none;
+}

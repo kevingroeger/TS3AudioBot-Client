@@ -27,14 +27,17 @@ export default function Settings () {
   }
 
   const handleChangeBots = (event) => {
+    event.preventDefault()
     setBots(event.target.value)
   }
 
   const handleChangeUrl = (event) => {
+    event.preventDefault()
     setUrl(event.target.value)
   }
 
   const handleChangeApiKey = (event) => {
+    event.preventDefault()
     setApiKey(event.target.value)
   }
 

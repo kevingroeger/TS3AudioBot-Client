@@ -10,7 +10,10 @@ export default function Listplaylists ({ botId }) {
     <div className='playlist_list'>
       {Array.isArray(playlists.playlists) && playlists.playlists.length > 0 ? playlists.playlists.map((item, i) => {
         return (
-          <Row className='searchResultRow'>
+          <Row
+            key={i}
+            className='searchResultRow'
+          >
             <Col sm={5} className='firstcol'>
               {item.Title}
             </Col>
