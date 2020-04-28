@@ -523,8 +523,15 @@ svg:hover {
 
 .searchAndPlayDiv input {
   margin: 0 1rem 0 -.8rem;
-  text-align: right;
+  text-align: left;
+  font-size: .9rem;
+  padding-top: .1rem;
+  padding-left: .4rem;
   border-radius: 1rem;
+}
+
+.searchAndPlayDiv input:focus {
+  outline: none;
 }
 
 .searchAndPlayButton {
