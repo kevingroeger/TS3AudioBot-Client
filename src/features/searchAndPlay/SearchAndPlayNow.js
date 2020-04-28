@@ -20,25 +20,29 @@ function SearchAndPlayNow ({ botId }) {
     setSearchValue(event.target.value)
   }
 
-  const handleSearch = () => {
+  const handleSearch = (event) => {
+    event.preventDefault()
     dispatch(searchSongsByValue(searchValue))
   }
 
   return (
     <div className='searchAndPlayDiv'>
-      <input
-        type="text"
-        value={searchValue}
-        onChange={handleChange}
-      />
-      <Button
-        size='sm'
-        type='submit'
-        className='searchAndPlayButton'
-        onClick={() => handleSearch()}
+      <form
+        onSubmit={handleSearch}
       >
-        Search
-      </Button>
+        <input
+          type="text"
+          value={searchValue}
+          onChange={handleChange}
+        />
+        <Button
+          size='sm'
+          type='submit'
+          className='searchAndPlayButton'
+        >
+          Search
+        </Button>
+      </form>
       <div className='somemargintop'>
         {searchStatus === 'loading' &&
         <div className='loadingDiv'>
