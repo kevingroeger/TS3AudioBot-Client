@@ -499,6 +499,9 @@ svg:hover {
 }
 
 .nav-pills .nav-link {
+  font-size: .95rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
   color: white;
 }
 
@@ -510,6 +513,7 @@ svg:hover {
   background: rgba(96,135,174,1);
   width: 100%;
   color: white;
+  font-weight: 400;
 }
 
 .searchAndPlayDiv {
@@ -541,7 +545,7 @@ svg:hover {
 }
 
 .searchResultRow:hover {
-  background: rgba(96,135,174,1);
+  background: linear-gradient(90deg, rgba(64,90,116,0.4) 17%, rgba(64,90,116,1) 50%, rgba(64,90,116,0.4) 83%);
 }
 
 .searchResultRow > div {
