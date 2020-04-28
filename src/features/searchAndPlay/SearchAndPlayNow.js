@@ -21,25 +21,24 @@ function SearchAndPlayNow ({ botId }) {
   }
 
   const handleSearch = () => {
-    console.log(searchValue)
     dispatch(searchSongsByValue(searchValue))
   }
 
   return (
     <div className='searchAndPlayDiv'>
-        <input
-          type="text"
-          value={searchValue}
-          onChange={handleChange}
-        />
-        <Button
-          size='sm'
-          type='submit'
-          className='searchAndPlayButton'
-          onClick={() => handleSearch()}
-        >
-          Search
-        </Button>
+      <input
+        type="text"
+        value={searchValue}
+        onChange={handleChange}
+      />
+      <Button
+        size='sm'
+        type='submit'
+        className='searchAndPlayButton'
+        onClick={() => handleSearch()}
+      >
+        Search
+      </Button>
       <div className='somemargintop'>
         {searchStatus === 'loading' &&
         <div className='loadingDiv'>
