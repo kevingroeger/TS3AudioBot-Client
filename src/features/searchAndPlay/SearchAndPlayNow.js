@@ -27,9 +27,6 @@ function SearchAndPlayNow ({ botId }) {
 
   return (
     <div className='searchAndPlayDiv'>
-      <form
-        onSubmit={handleSearch}
-      >
         <input
           type="text"
           value={searchValue}
@@ -39,10 +36,10 @@ function SearchAndPlayNow ({ botId }) {
           size='sm'
           type='submit'
           className='searchAndPlayButton'
+          onClick={() => handleSearch()}
         >
           Search
         </Button>
-      </form>
       <div className='somemargintop'>
         {searchStatus === 'loading' &&
         <div className='loadingDiv'>
