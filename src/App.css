@@ -546,7 +546,7 @@ svg:hover {
 
 .searchResultRow {
   width: 100%;
-  border-top: 1px solid white;
+  border-top: 1px solid rgba(205,205,205,.6);
   font-size: .8rem;
   padding: .25rem 0;
 }

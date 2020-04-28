@@ -1,7 +1,6 @@
 import { useRef, useEffect } from 'react'
 
 export function useInterval(callback, delay) {
-  console.log('set timer: ', delay/1000, ' seconds')
   const savedCallback = useRef()
 
   useEffect(() => {

@@ -89,6 +89,7 @@ export const songSlice = createSlice({
     [getSongInfo.fulfilled] : (state, action) => {
       if (!action.payload.Title) {
         state.status = 'no data'
+        state.Timer = 30
         return
       }
       state.Timer = action.payload.Length - action.payload.Position

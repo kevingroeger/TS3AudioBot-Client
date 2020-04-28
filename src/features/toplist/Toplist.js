@@ -31,7 +31,7 @@ export default function Toplist ({ botId }) {
   if (toplistData.status === 'ready') {
     return (
       <div className='topList'>
-        {toplistData.toplist.map((item, i) => {
+        {toplistData && toplistData.toplist.map((item, i) => {
           return (
             <ToplistEntry
               botId={botId}

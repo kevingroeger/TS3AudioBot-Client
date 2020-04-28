@@ -10,9 +10,7 @@ export default function NoContentCard () {
         light
         playIcon={<div />}
       />
-      <div className='playMenuTitle'>
-        None
-      </div>
+      <div className='playMenuTitle' />
     </>
   )
 }

@@ -32,7 +32,7 @@ export default function History ({ botId }) {
     return (
       <div className='history'>
         <div className='historyEntries'>
-          {historyData.history.map((item, i) => {
+          {historyData && historyData.history.map((item, i) => {
             return (
               <HistoryEntry
                 key={`history_${i}`}
