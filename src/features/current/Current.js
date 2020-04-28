@@ -7,6 +7,7 @@ import {
 
 import {
   selectSong,
+  selectTimer,
   getSongData
 } from './songSlice'
 
@@ -16,14 +17,21 @@ import MediaCard from './Content/MediaCard'
 import CurrentControls from './CurrentControls'
 import { Col } from 'react-bootstrap'
 import QueuedItems from './Content/QueuedItems'
+import { useInterval } from '../../utils/customHooks'
 
 export default function Current ({ botId }) {
   const song = useSelector(selectSong)
+  const delay = useSelector(selectTimer)
   const dispatch = useDispatch()
 
   useEffect(() => {
     loadData()
   }, [])
+
+  useInterval(() => {
+    loadData()
+  }, (!isNaN(delay) && delay > 0) ? delay * 1000 : 30000)
+  // if no timer is set, reload after 30 sec
 
   useEffect(() => {
     loadData()
@@ -50,7 +58,6 @@ export default function Current ({ botId }) {
       <Col sm={2} className='playMenuQueued' >
         <QueuedItems />
       </Col>
-
     </div>
   )
 }

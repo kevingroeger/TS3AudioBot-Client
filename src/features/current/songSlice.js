@@ -127,5 +127,6 @@ export const nextSongAction = botId => async dispatch => {
 }
 
 export const selectSong = state => state.song
+export const selectTimer = state => state.song.Timer
 
 export default songSlice.reducer
