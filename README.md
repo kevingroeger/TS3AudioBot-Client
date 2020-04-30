@@ -29,50 +29,15 @@ MacOS: [ts3audiobot-client-09-mac.zip](https://github.com/kevingroeger/TS3AudioB
 
 ## Overview
 
- - [Features](#features)
  - [Serverside setup](#serverside-setup)
  - [Configuration](#configuration)
     - [Base Url](#base-url)
     - [Bot Config](#bot-config)
     - [Api Key](#api-key)
- - [Usage](#usage)
-    - [Dashboard](#dashboard)
-    - [Playlist](#playlist)
-    - [Radio](#radio)
-    - [Toplist](#toplist)
-    - [History](#history)
  - [Known issues and bugs](#known-issues-and-bugs)
     - [Known issues](#known-issues)
  - [Customizing the app](#customizing-the-app)
  - [License](#license)
-
-## Features
-
-[Back to Overview](#overview)
-
-(Different styles have been used on these pictures)
-
-### Clear Overview
-
-<p align="center">
- <a href="https://imgur.com/7JVO7yJ.png" ><img width="42%" src="https://imgur.com/7JVO7yJ.png" /></a>
- <a href="https://imgur.com/UAj6mLX.png" ><img width="42%" src="https://imgur.com/UAj6mLX.png" /></a>
-</p>
-
-### See your history
-
-<p align="center">
- <a href="https://imgur.com/e5xdR7l.png"><img width="54%" src="https://imgur.com/e5xdR7l.png" /></a>
-</p>
-
-### Configurable with different styles
-
-<p align="center">
- <a href="https://imgur.com/htj2zw0.png"><img width="42%" src="https://imgur.com/htj2zw0.png" /></a>
- <a href="https://imgur.com/ib3Xep2.png"><img width="42%" src="https://imgur.com/ib3Xep2.png" /></a>
-</p>
-
-[More pictures can be found on Usage](#usage)
 
 ## Serverside setup
 
@@ -136,61 +101,13 @@ If you want to use api keys, just open a private chat to any bot on your TeamSpe
 
 Make sure to save your configuration. 
 
-## Usage
-
-[Back to Overview](#overview)
-
-(Different styles have been used on these pictures)
-
-Altough the usage is pretty straight forward, here is a quick overview:
-
-### Dashboard
-
-If a song is currently playing, it will be shown here with some basic controls (play/pause, next)
-
-Also you can enter a mp3 radiostream, a youtube link or another supported link here. For more information about what is supported visit [Splamy's TS3AudioBot](https://github.com/Splamy/TS3AudioBot).
-
-<p align="center">
- <a href="https://imgur.com/UAj6mLX.png"><img width="54%" src="https://imgur.com/UAj6mLX.png" /></a>
-</p>
-
-### Playlist
-
-You can create, play and add playlists to the queue here. Only youtube playlists are supported. Names cannot include any whitespaces. The playlists will be saved for everyone using the app.
-
-<p align="center">
- <a href="https://imgur.com/CZ7dF9y.png"><img width="42%" src="https://imgur.com/CZ7dF9y.png" /></a>
- <a href="https://imgur.com/pccEwoz.png"><img width="42%" src="https://imgur.com/pccEwoz.png" /></a>
-</p>
-
-### Radio
-<p align="center">
- <a href="https://imgur.com/0Aay2b6.png"><img width="54%" src="https://imgur.com/0Aay2b6.png" /></a>
-</p>
-
-There is currently only a small choice of preconfigured radio streams here. If you want to add your own radio go to [Customizing the app](#customizing-the-app).
-
-### Toplist
-
-The most played songs will be shown here in a compact list.
-
-### History
-
-<p align="center">
- <a href="https://imgur.com/e5xdR7l.png"><img width="54%" src="https://imgur.com/e5xdR7l.png" /></a>
-</p>
-
-The last 12 songs are shown here.
-
 ## Known issues and bugs
-
-This is an early build, so there are some things that I couldn't yet implement.
 
 If you find a bug that is not listed here, please submit it as an Issue.
 
 #### Known issues:
 
-There are currently no known issues. If you find a bug please create an issue. Thanks! 
+ - Performance Issues 
 
 ## Customizing the app
 
