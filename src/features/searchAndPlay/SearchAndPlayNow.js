@@ -8,6 +8,8 @@ import {
   selectSearchStatus
 } from './searchSlice'
 import { ClipLoader } from 'react-spinners'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function SearchAndPlayNow ({ botId }) {
   const [searchValue, setSearchValue] = useState('')
@@ -28,6 +30,7 @@ function SearchAndPlayNow ({ botId }) {
   return (
     <div className='searchAndPlayDiv'>
       <form
+        className='form_pos'
         onSubmit={handleSearch}
       >
         <input
@@ -35,10 +38,15 @@ function SearchAndPlayNow ({ botId }) {
           value={searchValue}
           onChange={handleChange}
         />
+        <FontAwesomeIcon
+          icon={faTimes}
+          className='searchValueCross'
+          onClick={() => setSearchValue('')}
+        />
         <Button
           size='sm'
           type='submit'
-          className='searchAndPlayButton'
+          className='customButton'
         >
           Search
         </Button>

@@ -21,13 +21,15 @@ function SearchResult ({
       className='searchResultRow'
       onDoubleClick={() => playSongNow()}
     >
-      <Col sm={7} className='cantMarkText'>
-        {title}
+      <Col sm={7} className={title.length > 67 ? 'textbox' : ''}>
+        <span>
+          {title}
+        </span>
       </Col>
-      <Col sm={3} className='cantMarkText'>
+      <Col sm={2} className='cantMarkText'>
         {author}
       </Col>
-      <Col sm={1} className='searchResultTimeStamp'>
+      <Col sm={2} className='searchResultTimeStamp'>
         {timestamp}
       </Col>
       <Col sm={1}>

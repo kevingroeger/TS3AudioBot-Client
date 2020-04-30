@@ -126,7 +126,7 @@ export default function Settings () {
           <Button
             onClick={() => handleSave()}
             variant='dark'
-            className='buttonBorder'
+            className='somemargintop customButton'
           >
             Save
           </Button>

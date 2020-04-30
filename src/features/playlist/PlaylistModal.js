@@ -50,16 +50,7 @@ export default function PlaylistModal ({
 
   return (
     <div className={showHideClassName}>
-      <div className='modal-main'
-           style={{
-             background: savedBackground,
-             color:
-               savedBackground !== '#efefef'
-               && savedBackground !== 'linear-gradient( 109.6deg,  rgba(247,202,201,1) 20.6%, rgba(146,168,209,1) 85.9% )'
-                 ? 'white'
-                 : 'black'
-           }}
-      >
+      <div className='modal-main'>
         <FontAwesomeIcon
           className='topright'
           icon={faTimes}
@@ -83,7 +74,7 @@ export default function PlaylistModal ({
               placeholder={'https://www.youtube.com/watch?v=IIwiM777OzQ&list=PLRBp0Fe2GpgkDkEB_DuBqPuS5O3iIDQ2N'}
             />
             <Button
-              className='buttonBorder'
+              className='customButton'
               variant='success'
               onClick={handleSubmit}
             >
