@@ -38,11 +38,13 @@ function SearchAndPlayNow ({ botId }) {
           value={searchValue}
           onChange={handleChange}
         />
-        <FontAwesomeIcon
-          icon={faTimes}
-          className='searchValueCross'
-          onClick={() => setSearchValue('')}
-        />
+        {searchValue !== '' && (
+          <FontAwesomeIcon
+            icon={faTimes}
+            className='searchValueCross'
+            onClick={() => setSearchValue('')}
+          />)
+        }
         <Button
           size='sm'
           type='submit'

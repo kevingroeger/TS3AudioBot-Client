@@ -593,13 +593,13 @@ div.react-player__preview:hover {
 
 .form_pos {
   position: relative;
-  max-width: 14rem;
+  max-width: 15rem;
 }
 
 .searchValueCross {
   color: rgba(0,0,0,.4);
   position: absolute;
-  right: 5.5rem;
+  right: 6.5rem;
   top: .6rem;
   font-size: .8rem;
 }
