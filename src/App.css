@@ -549,6 +549,11 @@ svg:hover {
   border: 1px solid rgba(255,255,255,.6);
 }
 
+.customButton:disabled {
+  background: rgba(32,49,66,.3);
+  border: 1px solid rgba(255,255,255,.2);
+}
+
 .searchResultTimeStamp {
   text-align: right;
 }
@@ -619,6 +624,8 @@ div.react-player__preview:hover {
   width: 400px;
   white-space: nowrap;
   overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .searchResultRow > div.textbox > span {
@@ -626,8 +633,6 @@ div.react-player__preview:hover {
   white-space: nowrap;
   transform: translateX(0);
   transition: 1s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
 }
 
 .searchResultRow > div.textbox:hover span {

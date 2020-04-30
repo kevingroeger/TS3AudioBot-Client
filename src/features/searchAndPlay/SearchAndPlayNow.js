@@ -47,6 +47,7 @@ function SearchAndPlayNow ({ botId }) {
           size='sm'
           type='submit'
           className='customButton'
+          disabled={searchStatus === 'loading'}
         >
           Search
         </Button>
