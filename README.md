@@ -39,6 +39,15 @@ MacOS: [ts3audiobot-client-1.0_mac.zip](https://github.com/kevingroeger/TS3Audio
  - [Customizing the app](#customizing-the-app)
  - [License](#license)
 
+## Features
+
+<p align="center">
+ <a href="https://imgur.com/sM7frQw.png"><img width="30%" src="https://imgur.com/sM7frQw.png"></a>
+ <a href="https://imgur.com/QqGH2GQ.png"><img width="30%" src="https://imgur.com/QqGH2GQ.png"></a>
+ <a href="https://imgur.com/bUt2auc.png"><img width="30%" src="https://imgur.com/bUt2auc.png"></a>
+</p>
+
+
 ## Serverside setup
 
 [Back to Overview](#overview)
