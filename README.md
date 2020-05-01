@@ -116,7 +116,7 @@ If you find a bug that is not listed here, please submit it as an Issue.
 
 #### Known issues:
 
- - Performance Issues 
+ - None
 
 ## Customizing the app
 
