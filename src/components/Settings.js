@@ -64,7 +64,7 @@ export default function Settings () {
         <p
           className='versionheader'
         >
-          v_1.0
+          v_1.0.1
         </p>
         {fetchError && (
           <Alert
@@ -125,7 +125,8 @@ export default function Settings () {
         >
           <Button
             onClick={() => handleSave()}
-            variant='dark'
+            variant='outline-light'
+            size={'sm'}
             className='somemargintop customButton'
           >
             Save

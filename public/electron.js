@@ -33,6 +33,8 @@ function createWindow () {
   mainWindow.on('closed', () => (
     mainWindow = null
   ))
+
+  isDev && mainWindow.webContents.openDevTools()
 }
 app.on('ready', createWindow)
 app.on('window-all-closed', () => {

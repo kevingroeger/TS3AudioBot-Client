@@ -74,8 +74,8 @@ export default function PlaylistModal ({
               placeholder={'https://www.youtube.com/watch?v=IIwiM777OzQ&list=PLRBp0Fe2GpgkDkEB_DuBqPuS5O3iIDQ2N'}
             />
             <Button
+              variant='outline-light'
               className='customButton'
-              variant='success'
               onClick={handleSubmit}
             >
               Submit

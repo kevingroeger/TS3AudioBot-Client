@@ -35,6 +35,7 @@ export default function Playlist ({ botId }) {
         handleClose={handleHideModal}
       />
       <Button
+        variant='outline-light'
         className='createNewPlaylistButton'
         onClick={handleShowModal}
         size={'sm'}
