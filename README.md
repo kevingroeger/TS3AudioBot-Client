@@ -9,9 +9,9 @@ The app is written with [reactjs](https://reactjs.org/), [redux-toolkit](https:/
 
 ##### Current stable version: 1.0
 
-Windows: [ts3audiobot-client-1.0_win.zip](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v1.0/ts3audiobot-client_1.0_win.zip)
+[Windows](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v1.0.1/ts3audiobot-client_win_1.0.1.zip)
 
-MacOS: [ts3audiobot-client-1.0_mac.zip](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v1.0/ts3audiobot-client_1.0_mac.zip)
+[MacOS](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v1.0.1/ts3audiobot-client_mac_1.0.1.zip)
 
 ## Quick Start
 
