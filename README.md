@@ -1,9 +1,20 @@
 # TS3AudioBot-Client
 
+## Features
+
 TS3AudioBot-Client is a lightweight clientside application for Windows and MacOS
 that aims to enhance the experience of [Splamy's TS3AudioBot](https://github.com/Splamy/TS3AudioBot). It is meant as an alternative to the built-in WebInterface.
  
+It offers a *built in youtube search*, some built-in radio stations and the addition of a top list.
+
+<p align="center">
+ <a href="https://imgur.com/sM7frQw.png"><img width="30%" src="https://imgur.com/sM7frQw.png"></a>
+ <a href="https://imgur.com/QqGH2GQ.png"><img width="30%" src="https://imgur.com/QqGH2GQ.png"></a>
+ <a href="https://imgur.com/bUt2auc.png"><img width="30%" src="https://imgur.com/bUt2auc.png"></a>
+</p>
+
 The app is written with [reactjs](https://reactjs.org/), [redux-toolkit](https://redux-toolkit.js.org/) and [electronjs](https://www.electronjs.org/). Also it makes use of the awesome npm package [yt-search](https://www.npmjs.com/package/yt-search).
+
 
 #### Download
 
@@ -38,14 +49,6 @@ The app is written with [reactjs](https://reactjs.org/), [redux-toolkit](https:/
     - [Known issues](#known-issues)
  - [Customizing the app](#customizing-the-app)
  - [License](#license)
-
-## Features
-
-<p align="center">
- <a href="https://imgur.com/sM7frQw.png"><img width="30%" src="https://imgur.com/sM7frQw.png"></a>
- <a href="https://imgur.com/QqGH2GQ.png"><img width="30%" src="https://imgur.com/QqGH2GQ.png"></a>
- <a href="https://imgur.com/bUt2auc.png"><img width="30%" src="https://imgur.com/bUt2auc.png"></a>
-</p>
 
 
 ## Serverside setup
