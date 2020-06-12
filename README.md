@@ -5,7 +5,7 @@
 TS3AudioBot-Client is a lightweight clientside application for Windows and MacOS
 that aims to enhance the experience of [Splamy's TS3AudioBot](https://github.com/Splamy/TS3AudioBot). It is meant as an alternative to the built-in WebInterface.
  
-It offers a *built in youtube search*, some built-in radio stations and the addition of a top list.
+It offers a **built in youtube search**, some built-in radio stations and the addition of a top list.
 
 <p align="center">
  <a href="https://imgur.com/sM7frQw.png"><img width="30%" src="https://imgur.com/sM7frQw.png"></a>
