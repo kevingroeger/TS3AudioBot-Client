@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { fetchApi } from '../../utils/dataAccess'
-import { songSlice } from '../current/songSlice'
 
 const fetchHistoryData = createAsyncThunk(
   `/history`,
@@ -16,7 +15,6 @@ const historySlice = createSlice({
     history: []
   },
   reducers: {
-
   },
   extraReducers: {
     [fetchHistoryData.pending] : state => {

@@ -12,6 +12,7 @@ function SearchResult ({
   url
 }) {
   const dispatch = useDispatch()
+
   const playSongNow = () => {
     dispatch(songPlayNowSearch(botId, encodeURIComponent(url)))
   }
