@@ -285,7 +285,7 @@ svg:hover {
   position: fixed;
   z-index: 2000;
   font-size: .6rem;
-  left: .67rem;
+  left: 0;
   bottom: -.5rem;
 }
 
@@ -383,8 +383,8 @@ svg:hover {
 }
 
 .settingsHl {
-  text-align: center;
-  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-top: 1.75rem;
 }
 
 .settingsHl h4 {

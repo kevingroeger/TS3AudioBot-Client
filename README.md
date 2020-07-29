@@ -7,22 +7,19 @@ that aims to enhance the experience of [Splamy's TS3AudioBot](https://github.com
  
 It offers a **built in youtube search**, some built-in radio stations and the addition of a top list.
 
-<p align="center">
- <a href="https://imgur.com/sM7frQw.png"><img width="30%" src="https://imgur.com/sM7frQw.png"></a>
- <a href="https://imgur.com/QqGH2GQ.png"><img width="30%" src="https://imgur.com/QqGH2GQ.png"></a>
- <a href="https://imgur.com/bUt2auc.png"><img width="30%" src="https://imgur.com/bUt2auc.png"></a>
-</p>
+![mainscreen](./readme_files/main.png)
+![gif](./readme_files/youtube_search.gif)
 
 The app is written with [reactjs](https://reactjs.org/), [redux-toolkit](https://redux-toolkit.js.org/) and [electronjs](https://www.electronjs.org/). Also it makes use of the awesome npm package [yt-search](https://www.npmjs.com/package/yt-search).
 
 
 #### Download
 
-##### Current stable version: 1.0.1
+##### Current stable version: 1.0.2
 
-[Windows](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v1.0.1/ts3audiobot-client_win_1.0.1.zip)
+[Windows](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v1.0.2/ts3audiobot-client_win_1.0.2.zip)
 
-[MacOS](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v1.0.1/ts3audiobot-client_mac_1.0.1.zip)
+[MacOS](https://github.com/kevingroeger/TS3AudioBot-Client/releases/download/v1.0.2/ts3audiobot-client_mac_1.0.2.zip)
 
 ## Quick Start
 
