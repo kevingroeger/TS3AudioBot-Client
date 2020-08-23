@@ -115,7 +115,7 @@ If you find a bug that is not listed here, please submit it as an Issue.
 
 #### Known issues:
 
- - None
+ - When changing the current song, it isn't immedietly shown 
 
 ## Customizing the app
 
