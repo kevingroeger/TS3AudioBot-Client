@@ -7,7 +7,6 @@ that aims to enhance the experience of [Splamy's TS3AudioBot](https://github.com
  
 It offers a **built in youtube search**, some built-in radio stations and the addition of a top list.
 
-![mainscreen](./readme_files/main.png)
 ![gif](./readme_files/youtube_search.gif)
 
 The app is written with [reactjs](https://reactjs.org/), [redux-toolkit](https://redux-toolkit.js.org/) and [electronjs](https://www.electronjs.org/). Also it makes use of the awesome npm package [yt-search](https://www.npmjs.com/package/yt-search).
