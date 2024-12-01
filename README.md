@@ -1,5 +1,9 @@
 # TS3AudioBot-Client
 
+## Note:
+
+Currently I can not find the time to keep working on this project, but feel free to contribute.
+
 ## Features
 
 TS3AudioBot-Client is a lightweight clientside application for Windows and MacOS
