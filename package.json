@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "@rescripts/cli": "0.0.14",
-    "electron": "^8.2.1",
+    "electron": "^35.7.5",
     "react-redux": "^7.2.0",
     "electron-builder": "^22.4.1",
     "typescript": "^3.8.3"
